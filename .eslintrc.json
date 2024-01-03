@@ -20,17 +20,19 @@
     "rules": {
        "react/react-in-jsx-scope": "off",
        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+       "prefer-arrow-callback": "error",
        "prettier/prettier":
         [
-        "error",
-        {
-            "tabWidth": 4,
-            "trailingComma": "all",
-            "singleQuote": true,
-            "bracketSpacing": true,
-            "eslintIntegration": true,
-            "printWidth": 120
-        }
+            "error",
+            {
+                "tabWidth": 4,
+                "trailingComma": "all",
+                "singleQuote": true,
+                "bracketSpacing": true,
+                "eslintIntegration": true,
+                "printWidth": 120,
+                "endOfLine": "auto"
+            }
        ]
     }
 }
