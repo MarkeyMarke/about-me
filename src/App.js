@@ -1,11 +1,11 @@
-import Navigation from './components/Navigation';
-import NavigationContent from './components/NavigationContent';
+import NavBar from './components/NavBar';
+import './styles/App.scss';
 
 function App() {
     return (
         <div className="app">
-            <Navigation />
-            <NavigationContent />
+            <NavBar />
+            <div>Stuff Here</div>
         </div>
     );
 }
