@@ -1,3 +1,5 @@
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons/faBriefcase';
 import { faDiceD20 } from '@fortawesome/free-solid-svg-icons/faDiceD20';
@@ -16,8 +18,11 @@ function NavBar({ scrollSpyIndex }) {
     return (
         <nav>
             <header className="nav-title">
-                <h1>Mark</h1>
-                <h1>Casapao</h1>
+                <FontAwesomeIcon icon={faLaptopCode} size="3x" />
+                <div className="nav-title-names">
+                    <h1>Mark</h1>
+                    <h1>Casapao</h1>
+                </div>
             </header>
             <NavItem
                 scrollSpyId={WELCOME.id}

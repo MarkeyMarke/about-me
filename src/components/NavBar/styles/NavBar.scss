@@ -16,9 +16,10 @@ nav {
 
     .nav-title {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        margin: 0 0 20px 0;
+        gap: 8px;
+        margin-bottom: 20px;
         font-size: fonts.$nav-item-font-size;
         font-family: fonts.$nav-title-font-family;
         color: colors.$white;
