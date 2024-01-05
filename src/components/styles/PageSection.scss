@@ -1,4 +1,5 @@
 @use 'src/constants/colors' as colors;
+@use 'src/constants/fonts' as fonts;
 
 .page-section + .page-section {
     margin-top: 40px;
@@ -8,9 +9,22 @@
     background-color: colors.$panel-background;
     box-shadow: 1px 5px 10px colors.$black;
     height: 900px;
-    padding: 40px;
 
     h1 {
         margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: fonts.$title-font-size;
+        padding: 20px;
+        font-weight: bold;
+        font-family: fonts.$title-font-family;
+        background-color: colors.$panel-title-background;
+        color: colors.$white;
+    }
+
+    .page-section-content {
+        color: colors.$white;
+        padding: 40px;
     }
 }

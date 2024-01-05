@@ -10,7 +10,7 @@ const propTypes = {
 function WelcomeSection({ sectionRef }) {
     return (
         <PageSection
-            title={SectionData.WELCOME.label}
+            title="Hello, Welcome to My Page!"
             scrollSpyId={SectionData.WELCOME.id}
             sectionRef={sectionRef}
         >

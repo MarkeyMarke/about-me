@@ -12,7 +12,7 @@ function PageSection({ children, title, scrollSpyId, sectionRef }) {
     return (
         <section id={scrollSpyId} className="page-section" ref={sectionRef}>
             <h1>{title}</h1>
-            {children}
+            <div className="page-section-content">{children}</div>
         </section>
     );
 }
