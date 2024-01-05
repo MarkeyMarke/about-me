@@ -8,12 +8,16 @@ html {
 
         .app {
             .main-page {
+                // Nav width + padding left and right + page section min-width
+                min-width: calc(300px + 80px + 800px);
                 margin-left: 300px;
                 padding: 20px 40px;
                 color: colors.$black;
                 overflow-y: auto;
                 background-color: colors.$website-background;
-                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
     }
