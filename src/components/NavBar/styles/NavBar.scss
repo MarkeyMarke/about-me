@@ -22,8 +22,7 @@ nav {
         gap: 8px;
 
         &:hover,
-        &:focus,
-        &.active {
+        &:focus {
             background-color: colors.$blue-dark;
         }
 
