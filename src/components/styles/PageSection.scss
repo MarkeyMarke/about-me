@@ -1,0 +1,15 @@
+@use 'src/constants/colors' as colors;
+
+.page-section + .page-section {
+    margin-top: 40px;
+}
+
+.page-section {
+    background-color: colors.$blue-darkest;
+    height: 900px;
+    padding: 40px;
+
+    h1 {
+        margin: 0;
+    }
+}

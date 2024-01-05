@@ -1,0 +1,19 @@
+@use 'src/constants/colors' as colors;
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .app {
+        display: flex;
+        height: 100vh;
+
+        .main-page {
+            padding: 40px;
+            color: white;
+            overflow-y: auto;
+            background-color: colors.$blue-darker;
+            flex-grow: 1;
+        }
+    }
+}
