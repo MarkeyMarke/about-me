@@ -1,37 +1,21 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const propTypes = {
-    href: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     scrollSpyId: PropTypes.string.isRequired,
-    icon: PropTypes.node.isRequired,
+    icon: PropTypes.shape({}).isRequired,
 };
 
-function NavItem({ href, label, scrollSpyId, icon }) {
-    const handleClick = (e) => {
-        e.preventDefault();
-        const target = window.document.getElementById(e.currentTarget.href.split('#')[1]);
-        if (target) {
-            const headerOffset = 20;
-            const elementPosition = target.getBoundingClientRect().top;
-            const offsetPosition = elementPosition - headerOffset;
+const NavItem = React.forwardRef(({ label, scrollSpyId, icon }, ref) => (
+    <a href={`#${scrollSpyId}`} className="navigation-item" ref={ref}>
+        <FontAwesomeIcon icon={icon} />
+        <span>{label}</span>
+    </a>
+));
 
-            window.scrollBy({
-                top: offsetPosition,
-                behavior: 'smooth',
-            });
-        }
-    };
-
-    return (
-        <a onClick={handleClick} href={href} className="navigation-item">
-            <FontAwesomeIcon icon={icon} />
-            <span data-to-scrollspy-id={scrollSpyId}>{label}</span>
-        </a>
-    );
-}
-
+NavItem.displayName = 'NavItem';
 NavItem.propTypes = propTypes;
 
 export default NavItem;

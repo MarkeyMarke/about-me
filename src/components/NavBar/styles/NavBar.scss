@@ -10,7 +10,7 @@ nav {
 
     .navigation-item {
         box-sizing: border-box;
-        padding: 20px;
+        padding: 20px 40px;
         width: 100%;
         display: flex;
         align-items: center;
@@ -22,7 +22,8 @@ nav {
         gap: 8px;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &.active {
             background-color: colors.$blue-dark;
         }
 

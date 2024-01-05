@@ -30,7 +30,7 @@
                 "singleQuote": true,
                 "bracketSpacing": true,
                 "eslintIntegration": true,
-                "printWidth": 120,
+                "printWidth": 80,
                 "endOfLine": "auto"
             }
        ]
