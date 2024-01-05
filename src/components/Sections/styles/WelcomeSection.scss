@@ -1,0 +1,42 @@
+@use 'src/constants/colors' as colors;
+
+.welcome-page-section {
+    .quote-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+
+        .profile-pic-border {
+            width: 200px;
+            height: 200px;
+            min-width: 200px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 10px solid colors.$white;
+
+            img {
+                display: inline;
+                margin: 0 auto;
+                height: 100%;
+                width: auto;
+            }
+        }
+
+        .quote {
+            font:
+                1.2rem/1.4 Georgia,
+                serif;
+            margin: 0;
+            background-color: colors.$quote-background;
+            padding: 1em;
+            border-radius: 1em;
+
+            figcaption,
+            blockquote {
+                margin: 1em;
+            }
+        }
+    }
+}
