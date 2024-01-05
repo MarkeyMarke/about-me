@@ -4,12 +4,13 @@ nav {
     padding: 40px 0;
     display: flex;
     flex-direction: column;
-    background-color: colors.$blue-darkest;
+    background-color: colors.$panel-background;
     align-items: center;
     width: 300px;
     position: fixed;
     top: 0;
     height: 100vh;
+    box-shadow: 0 5px 5px colors.$black;
 
     .navigation-item {
         box-sizing: border-box;
@@ -18,7 +19,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        color: colors.$white;
+        color: colors.$black;
         text-decoration: none;
         outline: none;
         font-size: 20px;
@@ -27,11 +28,11 @@ nav {
         &:hover,
         &:focus,
         &.scrollspy-active {
-            background-color: colors.$blue-dark;
+            background-color: colors.$button-selected;
         }
 
         &:active {
-            background-color: colors.$blue-default;
+            background-color: colors.$button-active;
         }
     }
 }

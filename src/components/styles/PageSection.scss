@@ -5,7 +5,8 @@
 }
 
 .page-section {
-    background-color: colors.$blue-darkest;
+    background-color: colors.$panel-background;
+    box-shadow: 1px 5px 10px colors.$black;
     height: 900px;
     padding: 40px;
 

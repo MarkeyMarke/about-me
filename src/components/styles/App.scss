@@ -8,9 +8,9 @@ body {
         .main-page {
             margin-left: 300px;
             padding: 40px;
-            color: white;
+            color: colors.$black;
             overflow-y: auto;
-            background-color: colors.$blue-darker;
+            background-color: colors.$website-background;
             flex-grow: 1;
         }
     }
