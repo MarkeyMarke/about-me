@@ -1,5 +1,6 @@
 @use 'src/constants/colors' as colors;
 @use 'src/constants/fonts' as fonts;
+@use 'src/constants/zIndex' as zIndex;
 
 nav {
     padding: 20px 0;
@@ -12,7 +13,7 @@ nav {
     top: 0;
     height: 100vh;
     box-shadow: 0 5px 5px colors.$black;
-    z-index: 100;
+    z-index: zIndex.$nav-bar;
 
     .nav-title {
         display: flex;
@@ -42,6 +43,7 @@ nav {
         outline: none;
         font-size: fonts.$nav-item-font-size;
         gap: 8px;
+        transition: background-color 0.5s;
 
         &:hover,
         &:focus,
