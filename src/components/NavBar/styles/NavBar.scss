@@ -2,7 +2,7 @@
 @use 'src/constants/fonts' as fonts;
 
 nav {
-    padding: 40px 0;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     background-color: colors.$panel-background;
@@ -12,6 +12,21 @@ nav {
     top: 0;
     height: 100vh;
     box-shadow: 0 5px 5px colors.$black;
+
+    .nav-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 20px 0;
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: colors.$white;
+
+        h1 {
+            margin: 0;
+            font-weight: normal;
+        }
+    }
 
     .navigation-item {
         box-sizing: border-box;

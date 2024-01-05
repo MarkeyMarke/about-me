@@ -25,9 +25,9 @@
         }
 
         .quote {
-            font:
-                1.2rem/1.4 Georgia,
-                serif;
+            font-size: 1.6rem;
+            line-height: 1.4;
+            font-family: Georgia, serif;
             margin: 0;
             background-color: colors.$quote-background;
             padding: 1em;

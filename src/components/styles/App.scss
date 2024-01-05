@@ -1,17 +1,20 @@
 @use 'src/constants/colors' as colors;
+html {
+    scroll-behavior: smooth;
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
 
-    .app {
-        .main-page {
-            margin-left: 300px;
-            padding: 20px 40px;
-            color: colors.$black;
-            overflow-y: auto;
-            background-color: colors.$website-background;
-            flex-grow: 1;
+        .app {
+            .main-page {
+                margin-left: 300px;
+                padding: 20px 40px;
+                color: colors.$black;
+                overflow-y: auto;
+                background-color: colors.$website-background;
+                flex-grow: 1;
+            }
         }
     }
 }

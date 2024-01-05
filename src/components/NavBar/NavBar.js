@@ -15,6 +15,10 @@ const propTypes = {
 function NavBar({ scrollSpyIndex }) {
     return (
         <nav>
+            <header className="nav-title">
+                <h1>Mark</h1>
+                <h1>Casapao</h1>
+            </header>
             <NavItem
                 scrollSpyId={WELCOME.id}
                 label={SectionData.WELCOME.label}
