@@ -5,11 +5,12 @@ const propTypes = {
     children: PropTypes.node.isRequired,
     scrollSpyId: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    sectionRef: PropTypes.shape({}).isRequired,
 };
 
-function PageSection({ children, title, scrollSpyId }) {
+function PageSection({ children, title, scrollSpyId, sectionRef }) {
     return (
-        <section id={scrollSpyId} className="page-section">
+        <section id={scrollSpyId} className="page-section" ref={sectionRef}>
             <h1>{title}</h1>
             {children}
         </section>

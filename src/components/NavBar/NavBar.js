@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons/faBriefcase';
 import { faDiceD20 } from '@fortawesome/free-solid-svg-icons/faDiceD20';
 import { faGamepad } from '@fortawesome/free-solid-svg-icons/faGamepad';
@@ -7,28 +8,40 @@ import './styles/NavBar.scss';
 import SectionData from '../../constants/SectionData';
 
 const { WELCOME, EXPERIENCE, DND, GAME_DEV } = SectionData;
+const propTypes = {
+    scrollSpyIndex: PropTypes.number.isRequired,
+};
 
-function NavBar() {
+function NavBar({ scrollSpyIndex }) {
     return (
         <nav>
             <NavItem
                 scrollSpyId={WELCOME.id}
                 label={SectionData.WELCOME.label}
                 icon={faUserTie}
+                inView={scrollSpyIndex === 0}
             />
             <NavItem
                 scrollSpyId={EXPERIENCE.id}
                 label={EXPERIENCE.label}
                 icon={faBriefcase}
+                inView={scrollSpyIndex === 1}
             />
-            <NavItem scrollSpyId={DND.id} label={DND.label} icon={faDiceD20} />
+            <NavItem
+                scrollSpyId={DND.id}
+                label={DND.label}
+                icon={faDiceD20}
+                inView={scrollSpyIndex === 2}
+            />
             <NavItem
                 scrollSpyId={GAME_DEV.id}
                 label={GAME_DEV.label}
                 icon={faGamepad}
+                inView={scrollSpyIndex === 3}
             />
         </nav>
     );
 }
 
+NavBar.propTypes = propTypes;
 export default NavBar;

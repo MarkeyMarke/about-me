@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+import { Scrollspy } from '@makotot/ghostui';
 import NavBar from './NavBar';
 import './styles/App.scss';
 import WelcomeSection from './Sections/WelcomeSection';
@@ -6,15 +8,28 @@ import DNDSection from './Sections/DNDSection';
 import GameDevSection from './Sections/GameDevSection';
 
 function App() {
+    const welcomeRef = useRef(null);
+    const expRef = useRef(null);
+    const dndRef = useRef(null);
+    const gameDevRef = useRef(null);
+
     return (
         <div className="app">
-            <NavBar />
-            <div className="main-page">
-                <WelcomeSection />
-                <ExperienceSection />
-                <DNDSection />
-                <GameDevSection />
-            </div>
+            <Scrollspy sectionRefs={[welcomeRef, expRef, dndRef, gameDevRef]}>
+                {({ currentElementIndexInViewport }) => (
+                    <>
+                        <NavBar
+                            scrollSpyIndex={currentElementIndexInViewport}
+                        />
+                        <div className="main-page">
+                            <WelcomeSection sectionRef={welcomeRef} />
+                            <ExperienceSection sectionRef={expRef} />
+                            <DNDSection sectionRef={dndRef} />
+                            <GameDevSection sectionRef={gameDevRef} />
+                        </div>
+                    </>
+                )}
+            </Scrollspy>
         </div>
     );
 }
