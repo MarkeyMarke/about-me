@@ -8,16 +8,21 @@ const propTypes = {
     scrollSpyId: PropTypes.string.isRequired,
     icon: PropTypes.shape({}).isRequired,
     inView: PropTypes.bool.isRequired,
+    onClick: PropTypes.func,
 };
 
-function NavItem({ label, scrollSpyId, icon, inView }) {
+const defaultProps = {
+    onClick: undefined,
+};
+
+function NavItem({ label, scrollSpyId, icon, inView, onClick }) {
     const classNames = cn({
         'navigation-item': true,
         'scrollspy-active': inView,
     });
 
     return (
-        <a href={`#${scrollSpyId}`} className={classNames}>
+        <a href={`#${scrollSpyId}`} className={classNames} onClick={onClick}>
             <FontAwesomeIcon icon={icon} />
             <span>{label}</span>
         </a>
@@ -25,5 +30,5 @@ function NavItem({ label, scrollSpyId, icon, inView }) {
 }
 
 NavItem.propTypes = propTypes;
-
+NavItem.defaultProps = defaultProps;
 export default NavItem;

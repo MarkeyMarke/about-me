@@ -1,6 +1,7 @@
 @use 'src/constants/colors' as colors;
 @use 'src/constants/fonts' as fonts;
 @use 'src/constants/zIndex' as zIndex;
+@use 'src/constants/deviceDimensions' as dimensions;
 
 .mobile-nav {
     background-color: colors.$panel-background;
@@ -11,8 +12,8 @@
 
     button {
         position: fixed;
-        height: 76px;
-        width: 76px;
+        height: dimensions.$mobile-nav-height;
+        width: dimensions.$mobile-nav-height;
         background-color: colors.$panel-background;
         border: none;
         cursor: pointer;
@@ -44,6 +45,46 @@
         h1 {
             margin: 0;
             font-weight: normal;
+        }
+    }
+}
+
+.offcanvas {
+    .offcanvas-header {
+        background-color: colors.$panel-background;
+
+        button {
+            color: colors.$white;
+        }
+    }
+
+    .offcanvas-body {
+        background-color: colors.$panel-background;
+        padding: 0;
+
+        .navigation-item {
+            box-sizing: border-box;
+            padding: 20px 0 20px 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: colors.$white;
+            text-decoration: none;
+            outline: none;
+            font-size: fonts.$nav-item-font-size;
+            gap: 8px;
+            transition: background-color 0.5s;
+
+            &:hover,
+            &:focus,
+            &.scrollspy-active {
+                background-color: colors.$button-selected;
+            }
+
+            &:active {
+                background-color: colors.$button-active;
+            }
         }
     }
 }

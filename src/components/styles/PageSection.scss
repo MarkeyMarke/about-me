@@ -34,3 +34,12 @@
         padding: 40px;
     }
 }
+
+.page-section-scroll-spy-marker {
+    position: relative;
+    top: -20px;
+
+    @media (max-width: dimensions.$desktop-viewport-min-width) {
+        top: calc((-1 * dimensions.$mobile-nav-height) - 20px);
+    }
+}
