@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import PageSection from '../PageSection';
+import { PageSection, PageSectionParagraph } from '../PageSection';
 import markProfile from '../../images/MarkProfile.jpg';
 import SectionData from '../../constants/SectionData';
 import './styles/WelcomeSection.scss';
@@ -28,7 +28,9 @@ function WelcomeSection({ sectionRef }) {
                     <figcaption>&mdash; Mark Twain</figcaption>
                 </figure>
             </div>
-            <p>TESTING TEXT CONTENT</p>
+            <PageSectionParagraph title="Testing Title">
+                Testing text content
+            </PageSectionParagraph>
         </PageSection>
     );
 }

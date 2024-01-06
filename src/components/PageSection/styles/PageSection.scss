@@ -15,7 +15,7 @@
     width: 100%;
     z-index: zIndex.$page-section;
 
-    h1 {
+    h1.page-section-title {
         margin: 0;
         display: flex;
         align-items: center;
@@ -31,6 +31,22 @@
     .page-section-content {
         color: colors.$white;
         padding: 40px;
+
+        h1.page-section-paragraph-title {
+            margin-top: 20px;
+            border-bottom: 1px solid colors.$white;
+        }
+
+        .page-section-paragraph {
+            margin-top: 20px;
+            background-color: colors.$panel-paragraph-background;
+            border-radius: 8px;
+            padding: 20px;
+
+            p {
+                margin: 0;
+            }
+        }
     }
 }
 

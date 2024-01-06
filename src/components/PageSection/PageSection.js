@@ -22,7 +22,7 @@ function PageSection({ children, title, scrollSpyId, sectionRef, className }) {
     return (
         <section className={sectionClassName} ref={sectionRef}>
             <span className="page-section-scroll-spy-marker" id={scrollSpyId} />
-            <h1>{title}</h1>
+            <h1 className="page-section-title">{title}</h1>
             <div className="page-section-content">{children}</div>
         </section>
     );
