@@ -26,7 +26,7 @@ function NavBar({ scrollSpyIndex }) {
     return (
         <nav className="desktop-nav">
             <header className="nav-title">
-                <FontAwesomeIcon icon={faLaptopCode} size="3x" />
+                <FontAwesomeIcon icon={faLaptopCode} size="2x" />
                 <div className="nav-title-names">
                     <h1>Mark</h1>
                     <h1>Casapao</h1>

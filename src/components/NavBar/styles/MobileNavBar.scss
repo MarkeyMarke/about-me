@@ -30,6 +30,7 @@
 
         svg {
             color: colors.$white;
+            font-size: fonts.$nav-title-font-size;
         }
     }
 
@@ -43,9 +44,16 @@
         font-family: fonts.$nav-title-font-family;
         color: colors.$white;
 
-        h1 {
-            margin: 0;
-            font-weight: normal;
+        .nav-title-names {
+            display: flex;
+            gap: 4px;
+            flex-shrink: 0;
+
+            h1 {
+                margin: 0;
+                font-weight: normal;
+                font-size: fonts.$nav-title-font-size;
+            }
         }
     }
 }

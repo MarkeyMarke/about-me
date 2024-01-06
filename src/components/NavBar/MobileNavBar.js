@@ -32,12 +32,14 @@ function MobileNavBar() {
                     aria-label="Open navigation menu"
                     onClick={handleMenuOpen}
                 >
-                    <FontAwesomeIcon icon={faBars} size="3x" />
+                    <FontAwesomeIcon icon={faBars} />
                 </button>
                 <header className="nav-title">
-                    <FontAwesomeIcon icon={faLaptopCode} size="2x" />
-                    <h1>Mark</h1>
-                    <h1>Casapao</h1>
+                    <FontAwesomeIcon icon={faLaptopCode} />
+                    <div className="nav-title-names">
+                        <h1>Mark</h1>
+                        <h1>Casapao</h1>
+                    </div>
                 </header>
             </nav>
             <Offcanvas show={showMenu} onHide={handleMenuClose}>

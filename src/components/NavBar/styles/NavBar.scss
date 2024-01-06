@@ -16,17 +16,23 @@
     box-shadow: 0 5px 5px colors.$black;
     z-index: zIndex.$nav-bar;
 
+    /* CSS specific to iOS devices */
+    @supports (-webkit-touch-callout: none) {
+        height: -webkit-fill-available;
+    }
+
     .nav-title {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 8px;
         margin-bottom: 20px;
-        font-size: fonts.$nav-title-font-size;
-        font-family: fonts.$nav-title-font-family;
         color: colors.$white;
+        font-size: fonts.$nav-title-font-size;
 
         h1 {
+            font-family: fonts.$nav-title-font-family;
+            font-size: fonts.$nav-title-font-size;
             margin: 0;
             font-weight: normal;
         }

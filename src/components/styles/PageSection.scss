@@ -11,7 +11,7 @@
     background-color: colors.$panel-background;
     box-shadow: 1px 5px 10px colors.$black;
     height: 900px;
-    min-width: min-content;
+    min-width: dimensions.$desktop-page-section-min-width;
     max-width: 1800px;
     width: 100%;
     z-index: zIndex.$page-section;

@@ -20,6 +20,7 @@ html {
 
                 @media (max-width: dimensions.$desktop-viewport-min-width) {
                     margin-left: 0;
+                    align-items: flex-start;
                 }
             }
         }
