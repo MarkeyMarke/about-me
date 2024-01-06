@@ -20,7 +20,7 @@ function NavBar({ scrollSpyIndex }) {
     const isNarrowDevice = useNarrowDevice();
 
     if (isNarrowDevice) {
-        return <MobileNavBar scrollSpyIndex={scrollSpyIndex} />;
+        return <MobileNavBar />;
     }
 
     return (

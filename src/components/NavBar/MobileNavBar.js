@@ -1,6 +1,5 @@
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
@@ -13,11 +12,8 @@ import NavItem from './NavItem';
 import './styles/MobileNavBar.scss';
 
 const { WELCOME, EXPERIENCE, DND, GAME_DEV } = SectionData;
-const propTypes = {
-    scrollSpyIndex: PropTypes.number.isRequired,
-};
 
-function MobileNavBar({ scrollSpyIndex }) {
+function MobileNavBar() {
     const [showMenu, setShowMenu] = useState(false);
 
     const handleMenuOpen = () => {
@@ -53,28 +49,24 @@ function MobileNavBar({ scrollSpyIndex }) {
                         scrollSpyId={WELCOME.id}
                         label={SectionData.WELCOME.label}
                         icon={faUserTie}
-                        inView={scrollSpyIndex === 0}
                         onClick={handleMenuClose}
                     />
                     <NavItem
                         scrollSpyId={EXPERIENCE.id}
                         label={EXPERIENCE.label}
                         icon={faBriefcase}
-                        inView={scrollSpyIndex === 1}
                         onClick={handleMenuClose}
                     />
                     <NavItem
                         scrollSpyId={DND.id}
                         label={DND.label}
                         icon={faDiceD20}
-                        inView={scrollSpyIndex === 2}
                         onClick={handleMenuClose}
                     />
                     <NavItem
                         scrollSpyId={GAME_DEV.id}
                         label={GAME_DEV.label}
                         icon={faGamepad}
-                        inView={scrollSpyIndex === 3}
                         onClick={handleMenuClose}
                     />
                 </Offcanvas.Body>
@@ -83,5 +75,4 @@ function MobileNavBar({ scrollSpyIndex }) {
     );
 }
 
-MobileNavBar.propTypes = propTypes;
 export default MobileNavBar;

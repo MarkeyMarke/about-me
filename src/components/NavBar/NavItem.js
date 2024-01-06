@@ -7,12 +7,13 @@ const propTypes = {
     label: PropTypes.string.isRequired,
     scrollSpyId: PropTypes.string.isRequired,
     icon: PropTypes.shape({}).isRequired,
-    inView: PropTypes.bool.isRequired,
+    inView: PropTypes.bool,
     onClick: PropTypes.func,
 };
 
 const defaultProps = {
     onClick: undefined,
+    inView: false,
 };
 
 function NavItem({ label, scrollSpyId, icon, inView, onClick }) {

@@ -52,6 +52,7 @@
 .offcanvas {
     .offcanvas-header {
         background-color: colors.$panel-background;
+        border-bottom: 1px solid colors.$button-active;
 
         button {
             color: colors.$white;
@@ -75,10 +76,10 @@
             font-size: fonts.$nav-item-font-size;
             gap: 8px;
             transition: background-color 0.5s;
+            border-bottom: 1px solid colors.$button-active;
 
             &:hover,
-            &:focus,
-            &.scrollspy-active {
+            &:focus {
                 background-color: colors.$button-selected;
             }
 
