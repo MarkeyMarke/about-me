@@ -1,6 +1,9 @@
 @use 'src/constants/colors' as colors;
 
 .welcome-page-section {
+    display: flex;
+    flex-direction: column;
+
     .quote-container {
         display: flex;
         align-items: center;
