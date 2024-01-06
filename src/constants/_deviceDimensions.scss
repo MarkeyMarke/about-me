@@ -6,6 +6,6 @@ $desktop-viewport-min-width: calc(
     $desktop-nav-width + ($desktop-main-page-side-padding * 2) + $desktop-page-section-min-width
 );
 
-$mobile-nav-height: 68px;
+$mobile-nav-height: 56px;
 // Main page padding + page section minimum width
 $mobile-mini-viewport-min-width: calc(($desktop-main-page-side-padding * 2) + $desktop-page-section-min-width);
