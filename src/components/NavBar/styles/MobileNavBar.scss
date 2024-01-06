@@ -1,0 +1,49 @@
+@use 'src/constants/colors' as colors;
+@use 'src/constants/fonts' as fonts;
+@use 'src/constants/zIndex' as zIndex;
+
+.mobile-nav {
+    background-color: colors.$panel-background;
+    z-index: zIndex.$nav-bar;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px colors.$black;
+
+    button {
+        position: fixed;
+        height: 76px;
+        width: 76px;
+        background-color: colors.$panel-background;
+        border: none;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            background-color: colors.$button-selected;
+        }
+
+        &:active {
+            background-color: colors.$button-active;
+        }
+
+        svg {
+            color: colors.$white;
+        }
+    }
+
+    .nav-title {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        font-size: fonts.$nav-title-font-size;
+        font-family: fonts.$nav-title-font-family;
+        color: colors.$white;
+
+        h1 {
+            margin: 0;
+            font-weight: normal;
+        }
+    }
+}

@@ -9,6 +9,7 @@ import NavItem from './NavItem';
 import './styles/NavBar.scss';
 import SectionData from '../../constants/SectionData';
 import useNarrowDevice from '../../services/useNarrowDevice';
+import MobileNavBar from './MobileNavBar';
 
 const { WELCOME, EXPERIENCE, DND, GAME_DEV } = SectionData;
 const propTypes = {
@@ -19,11 +20,7 @@ function NavBar({ scrollSpyIndex }) {
     const isNarrowDevice = useNarrowDevice();
 
     if (isNarrowDevice) {
-        return (
-            <nav>
-                <button type="button">Hamburger Button</button>
-            </nav>
-        );
+        return <MobileNavBar scrollSpyIndex={scrollSpyIndex} />;
     }
 
     return (
