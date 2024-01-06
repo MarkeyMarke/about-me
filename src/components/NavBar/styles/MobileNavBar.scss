@@ -44,6 +44,12 @@
         font-family: fonts.$nav-title-font-family;
         color: colors.$white;
 
+        @media (max-width: dimensions.$mobile-mini-viewport-min-width) {
+            svg {
+                display: none;
+            }
+        }
+
         .nav-title-names {
             display: flex;
             gap: 4px;

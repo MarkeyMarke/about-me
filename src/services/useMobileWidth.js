@@ -8,7 +8,7 @@ const DESKTOP_MIN_VIEWPORT_WIDTH =
     DESKTOP_MAIN_PAGE_SIDE_PADDING_PX * 2 +
     DESKTOP_PAGE_SECTION_MIN_WDITH_PX;
 
-function useNarrowDevice() {
+function useMobileWidth() {
     const [size, setSize] = useState(0);
     useLayoutEffect(() => {
         function updateSize() {
@@ -25,4 +25,4 @@ function useNarrowDevice() {
     return size < DESKTOP_MIN_VIEWPORT_WIDTH;
 }
 
-export default useNarrowDevice;
+export default useMobileWidth;

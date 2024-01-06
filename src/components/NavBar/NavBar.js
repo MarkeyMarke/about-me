@@ -8,7 +8,7 @@ import { faUserTie } from '@fortawesome/free-solid-svg-icons/faUserTie';
 import NavItem from './NavItem';
 import './styles/NavBar.scss';
 import SectionData from '../../constants/SectionData';
-import useNarrowDevice from '../../services/useNarrowDevice';
+import useMobileWidth from '../../services/useMobileWidth';
 import MobileNavBar from './MobileNavBar';
 
 const { WELCOME, EXPERIENCE, DND, GAME_DEV } = SectionData;
@@ -17,9 +17,9 @@ const propTypes = {
 };
 
 function NavBar({ scrollSpyIndex }) {
-    const isNarrowDevice = useNarrowDevice();
+    const isMobileWidth = useMobileWidth();
 
-    if (isNarrowDevice) {
+    if (isMobileWidth) {
         return <MobileNavBar />;
     }
 
