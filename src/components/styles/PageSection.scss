@@ -1,5 +1,6 @@
 @use 'src/constants/colors' as colors;
 @use 'src/constants/fonts' as fonts;
+@use 'src/constants/zIndex' as zIndex;
 
 .page-section + .page-section {
     margin-top: 40px;
@@ -12,6 +13,7 @@
     min-width: 800px;
     max-width: 1800px;
     width: 100%;
+    z-index: zIndex.$page-section;
 
     h1 {
         margin: 0;

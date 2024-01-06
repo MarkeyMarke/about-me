@@ -6,6 +6,7 @@ import WelcomeSection from './Sections/WelcomeSection';
 import ExperienceSection from './Sections/ExperienceSection';
 import DNDSection from './Sections/DNDSection';
 import GameDevSection from './Sections/GameDevSection';
+import AnimatedWallpaper from './AnimatedWallpaper';
 
 function App() {
     const welcomeRef = useRef(null);
@@ -15,6 +16,7 @@ function App() {
 
     return (
         <div className="app">
+            <AnimatedWallpaper />
             <Scrollspy sectionRefs={[welcomeRef, expRef, dndRef, gameDevRef]}>
                 {({ currentElementIndexInViewport }) => (
                     <>

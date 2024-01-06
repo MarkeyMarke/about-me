@@ -1,0 +1,39 @@
+.wallpaper-container {
+    position: fixed;
+
+    .wallpaper-circle {
+        border-radius: 50%;
+        position: fixed;
+        height: 50vh;
+        aspect-ratio: 1 / 1;
+        animation-name: wallpaper-circle;
+        animation-duration: 12s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        opacity: 0;
+
+        --startX: 20vw;
+        --startY: 20vh;
+        --endX: 80vw;
+        --endY: 80vh;
+    }
+}
+
+@keyframes wallpaper-circle {
+    0% {
+        opacity: 0;
+        transform: translate(var(--startX), var(--startY));
+    }
+    10% {
+        opacity: 1;
+        transform: translate(var(--startX), var(--startY));
+    }
+    90% {
+        opacity: 1;
+        transform: translate(var(--endX), var(--endY));
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--endX), var(--endY));
+    }
+}
