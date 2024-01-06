@@ -1,0 +1,7 @@
+$desktop-nav-width: 300px;
+$desktop-page-section-min-width: 800px;
+$desktop-main-page-side-padding: 40px;
+// Nav width + padding left and right + page section min-width
+$desktop-viewport-min-width: calc(
+    $desktop-nav-width + ($desktop-main-page-side-padding * 2) + $desktop-page-section-min-width
+);
