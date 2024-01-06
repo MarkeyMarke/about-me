@@ -1,7 +1,10 @@
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import PropTypes from 'prop-types';
 import { PageSection, PageSectionParagraph } from '../PageSection';
 import markProfile from '../../images/MarkProfile.jpg';
 import SectionData from '../../constants/SectionData';
+import IconButton from '../IconButton';
 import './styles/WelcomeSection.scss';
 
 const propTypes = {
@@ -35,6 +38,18 @@ function WelcomeSection({ sectionRef }) {
                 believe in strong communication, leadership, and keeping a
                 growth-oriented mindset.
             </PageSectionParagraph>
+            <div className="welcome-page-section-icon-buttons">
+                <IconButton
+                    href="https://www.linkedin.com/in/mkccasapao/"
+                    icon={faLinkedin}
+                    ariaLabel="LinkedIn link"
+                />
+                <IconButton
+                    href="https://github.com/MarkeyMarke"
+                    icon={faGithub}
+                    ariaLabel="GitHub link"
+                />
+            </div>
         </PageSection>
     );
 }

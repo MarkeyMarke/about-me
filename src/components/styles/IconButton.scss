@@ -1,0 +1,25 @@
+@use 'src/constants/colors' as colors;
+
+.icon-button {
+    background-color: colors.$button-default;
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    color: colors.$white;
+    border-radius: 50%;
+    transition: background-color 0.5s;
+
+    &:hover,
+    &:focus {
+        background-color: colors.$button-selected;
+    }
+
+    &:active {
+        background-color: colors.$button-active;
+    }
+}
