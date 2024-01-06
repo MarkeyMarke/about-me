@@ -28,8 +28,12 @@ function WelcomeSection({ sectionRef }) {
                     <figcaption>&mdash; Mark Twain</figcaption>
                 </figure>
             </div>
-            <PageSectionParagraph title="Testing Title">
-                Testing text content
+            <PageSectionParagraph title="About Me">
+                I&#39;m a web developer at work but also a game development
+                enthusiast at home. I am passionate about building applications
+                with responsive UI, accessibility, and a seamless flow in UX. I
+                believe in strong communication, leadership, and keeping a
+                growth-oriented mindset.
             </PageSectionParagraph>
         </PageSection>
     );
