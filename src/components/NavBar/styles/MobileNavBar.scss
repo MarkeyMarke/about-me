@@ -11,7 +11,8 @@
     box-shadow: 0 2px 5px colors.$black;
 
     button {
-        position: fixed;
+        position: absolute;
+        top: 0;
         height: dimensions.$mobile-nav-height;
         width: dimensions.$mobile-nav-height;
         background-color: colors.$panel-background;
