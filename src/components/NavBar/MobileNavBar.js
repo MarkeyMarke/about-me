@@ -19,7 +19,6 @@ const propTypes = {
 
 function MobileNavBar({ scrollSpyIndex }) {
     const [showMenu, setShowMenu] = useState(false);
-    console.log(scrollSpyIndex);
 
     const handleMenuOpen = () => {
         setShowMenu(true);
