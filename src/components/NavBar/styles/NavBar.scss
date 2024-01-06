@@ -1,8 +1,9 @@
 @use 'src/constants/colors' as colors;
 @use 'src/constants/fonts' as fonts;
 @use 'src/constants/zIndex' as zIndex;
+@use 'src/constants/deviceDimensions' as dimensions;
 
-nav {
+nav.desktop-nav {
     padding: 20px 0;
     display: flex;
     flex-direction: column;

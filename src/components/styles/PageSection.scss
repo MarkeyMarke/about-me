@@ -1,6 +1,7 @@
 @use 'src/constants/colors' as colors;
 @use 'src/constants/fonts' as fonts;
 @use 'src/constants/zIndex' as zIndex;
+@use 'src/constants/deviceDimensions' as dimensions;
 
 .page-section + .page-section {
     margin-top: 40px;
@@ -10,7 +11,7 @@
     background-color: colors.$panel-background;
     box-shadow: 1px 5px 10px colors.$black;
     height: 900px;
-    min-width: 800px;
+    min-width: dimensions.$desktop-page-section-min-width;
     max-width: 1800px;
     width: 100%;
     z-index: zIndex.$page-section;

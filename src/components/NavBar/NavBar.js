@@ -8,6 +8,7 @@ import { faUserTie } from '@fortawesome/free-solid-svg-icons/faUserTie';
 import NavItem from './NavItem';
 import './styles/NavBar.scss';
 import SectionData from '../../constants/SectionData';
+import useNarrowDevice from '../../services/useNarrowDevice';
 
 const { WELCOME, EXPERIENCE, DND, GAME_DEV } = SectionData;
 const propTypes = {
@@ -15,8 +16,18 @@ const propTypes = {
 };
 
 function NavBar({ scrollSpyIndex }) {
+    const isNarrowDevice = useNarrowDevice();
+
+    if (isNarrowDevice) {
+        return (
+            <nav>
+                <button type="button">Hamburger Button</button>
+            </nav>
+        );
+    }
+
     return (
-        <nav>
+        <nav className="desktop-nav">
             <header className="nav-title">
                 <FontAwesomeIcon icon={faLaptopCode} size="3x" />
                 <div className="nav-title-names">

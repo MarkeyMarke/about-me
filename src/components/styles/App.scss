@@ -1,4 +1,6 @@
 @use 'src/constants/colors' as colors;
+@use 'src/constants/deviceDimensions' as dimensions;
+
 html {
     scroll-behavior: smooth;
 
@@ -8,16 +10,17 @@ html {
 
         .app {
             .main-page {
-                // Nav width + padding left and right + page section min-width
-                min-width: calc(300px + 80px + 800px);
-                margin-left: 300px;
-                padding: 20px 40px;
-                color: colors.$black;
+                margin-left: dimensions.$desktop-nav-width;
+                padding: 20px dimensions.$desktop-main-page-side-padding;
                 overflow-y: auto;
                 background-color: colors.$website-background;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
+                @media (max-width: dimensions.$desktop-viewport-min-width) {
+                    margin-left: 0;
+                }
             }
         }
     }
