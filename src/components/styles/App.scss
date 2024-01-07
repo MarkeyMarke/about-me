@@ -13,7 +13,6 @@ html {
             margin-left: dimensions.$nav-width;
             padding: dimensions.$main-page-vertical-padding dimensions.$main-page-horizontal-padding;
             overflow-y: auto;
-            // overscroll-behavior-y: contain;
             background-color: colors.$website-background;
             display: flex;
             flex-direction: column;
