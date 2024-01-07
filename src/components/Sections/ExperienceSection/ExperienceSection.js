@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { PageSection } from '../PageSection';
-import SectionData from '../../constants/SectionData';
+import { PageSection } from '../../PageSection';
+import SectionData from '../../../constants/SectionData';
 import './styles/ExperienceSection.scss';
 
 const propTypes = {

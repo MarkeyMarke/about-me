@@ -1,10 +1,10 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import PropTypes from 'prop-types';
-import { PageSection, PageSectionParagraph } from '../PageSection';
-import markProfile from '../../images/MarkProfile.jpg';
-import SectionData from '../../constants/SectionData';
-import IconButton from '../IconButton';
+import { PageSection, PageSectionParagraph } from '../../PageSection';
+import markProfile from '../../../images/MarkProfile.jpg';
+import SectionData from '../../../constants/SectionData';
+import IconButton from '../../IconButton';
 import './styles/WelcomeSection.scss';
 
 const propTypes = {
