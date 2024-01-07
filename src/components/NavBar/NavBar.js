@@ -2,7 +2,7 @@ import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import NavItem from './NavItem';
-import './styles/NavBar.scss';
+import './__styles__/NavBar.scss';
 import SectionData from '../../constants/SectionData';
 import useMobileWidth from '../../services/useMobileWidth';
 import HamburgerNavBar from './HamburgerNavBar';

@@ -5,7 +5,7 @@ import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 import SectionData from '../../constants/SectionData';
 import NavItem from './NavItem';
-import './styles/HamburgerNavBar.scss';
+import './__styles__/HamburgerNavBar.scss';
 
 const sectionDataValues = Object.values(SectionData);
 

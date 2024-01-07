@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import './styles/PageSection.scss';
+import './__styles__/PageSection.scss';
 
 const propTypes = {
     children: PropTypes.node.isRequired,

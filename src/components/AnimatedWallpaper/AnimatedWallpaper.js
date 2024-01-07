@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import useMovingCircles from './useMovingCircles';
 import MovingCircle from './MovingCircle';
-import './styles/AnimatedWallpaper.scss';
+import './__styles__/AnimatedWallpaper.scss';
 
 function AnimatedWallpaper() {
     const containerRef = useRef();

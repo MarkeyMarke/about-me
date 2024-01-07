@@ -1,0 +1,44 @@
+@use 'src/constants/colors' as colors;
+@use 'src/constants/fonts' as fonts;
+@use 'src/constants/deviceDimensions' as dimensions;
+
+$selected-tab-color: colors.$button-selected;
+$active-tab-color: colors.$button-active;
+
+.tabs {
+    .tab {
+        background-color: colors.$panel-tab-panel-background;
+        border: none;
+        outline: none;
+        color: colors.$white;
+        font-size: fonts.$tab-font-size;
+        padding: 10px 20px;
+        border-bottom: 3px solid colors.$white;
+        transition:
+            color 0.5s,
+            border-bottom 0.5s,
+            background-color 0.1s;
+
+        &[aria-selected='true'],
+        &:hover,
+        &:focus {
+            color: $selected-tab-color;
+            border-bottom: 3px solid $selected-tab-color;
+        }
+
+        &:active {
+            color: $active-tab-color;
+            border-bottom: 3px solid $active-tab-color;
+            background-color: #86a0d7;
+        }
+    }
+}
+.tab-panel {
+    background-color: colors.$panel-tab-panel-background;
+    padding: 20px;
+    font-size: fonts.$paragraph-font-size;
+
+    @media (max-width: dimensions.$narrow-viewport-min-width) {
+        font-size: fonts.$mini-paragraph-font-size;
+    }
+}

@@ -1,11 +1,36 @@
 import PropTypes from 'prop-types';
-import { PageSection } from '../../PageSection';
+import PageSection from '../../PageSection';
 import SectionData from '../../../constants/SectionData';
-import './styles/ExperienceSection.scss';
+import Tab from '../../Tab';
+import './__styles__/ExperienceSection.scss';
 
 const propTypes = {
     sectionRef: PropTypes.shape({}).isRequired,
 };
+
+const tabData = [
+    {
+        id: 'skills',
+        label: 'Skills',
+        content: <div>Skills Content Test</div>,
+        tabClassName: 'skills-tab',
+        tabPanelClassName: 'skills-tab-panel',
+    },
+    {
+        id: 'work',
+        label: 'Work',
+        content: <div>Work Content Test</div>,
+        tabClassName: 'work-tab',
+        tabPanelClassName: 'work-tab-panel',
+    },
+    {
+        id: 'education',
+        label: 'Education',
+        content: <div>Education Content Test</div>,
+        tabClassName: 'education-tab',
+        tabPanelClassName: 'education-tab-panel',
+    },
+];
 
 function ExperienceSection({ sectionRef }) {
     return (
@@ -15,7 +40,7 @@ function ExperienceSection({ sectionRef }) {
             sectionRef={sectionRef}
             className="experience-page-section"
         >
-            <span>TESTING TEXT CONTENT</span>
+            <Tab tabData={tabData} />
         </PageSection>
     );
 }

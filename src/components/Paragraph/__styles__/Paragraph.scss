@@ -1,0 +1,30 @@
+@use 'src/constants/colors' as colors;
+@use 'src/constants/fonts' as fonts;
+@use 'src/constants/deviceDimensions' as dimensions;
+
+h1.paragraph-title {
+    margin-top: 20px;
+    border-bottom: 1px solid colors.$white;
+    padding-bottom: 4px;
+    font-size: fonts.$page-section-title-font-size;
+
+    @media (max-width: dimensions.$narrow-viewport-min-width) {
+        font-size: fonts.$mini-page-section-title-font-size;
+    }
+}
+
+.paragraph {
+    margin-top: 20px;
+    background-color: colors.$panel-paragraph-background;
+    border-radius: 8px;
+    padding: 20px;
+
+    p {
+        margin: 0;
+        font-size: fonts.$paragraph-font-size;
+
+        @media (max-width: dimensions.$narrow-viewport-min-width) {
+            font-size: fonts.$mini-paragraph-font-size;
+        }
+    }
+}

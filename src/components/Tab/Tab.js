@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import cn from 'classnames';
 
 const propTypes = {
     label: PropTypes.string.isRequired,
@@ -13,13 +14,14 @@ const defaultProps = {
 };
 
 function Tab({ label, onClick, selected, id, className }) {
+    const tabClassName = cn('tab', className);
     const handleClick = (e) => {
         onClick(e, id);
     };
 
     return (
         <button
-            className={className}
+            className={tabClassName}
             id={`${id}-tab`}
             role="tab"
             type="button"

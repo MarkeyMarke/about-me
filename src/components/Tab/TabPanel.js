@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import cn from 'classnames';
 
 const propTypes = {
     children: PropTypes.node.isRequired,
@@ -16,9 +17,11 @@ function TabPanel({ children, id, className, selected }) {
         return null;
     }
 
+    const tabPanelClassName = cn('tab-panel', className);
+
     return (
         <div
-            className={className}
+            className={tabPanelClassName}
             id={`${id}-panel`}
             role="tabpanel"
             aria-labelledby={`${id}-tab`}

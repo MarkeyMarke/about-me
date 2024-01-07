@@ -1,11 +1,12 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import PropTypes from 'prop-types';
-import { PageSection, PageSectionParagraph } from '../../PageSection';
+import PageSection from '../../PageSection';
+import Paragraph from '../../Paragraph';
 import markProfile from '../../../images/MarkProfile.jpg';
 import SectionData from '../../../constants/SectionData';
 import IconButton from '../../IconButton';
-import './styles/WelcomeSection.scss';
+import './__styles__/WelcomeSection.scss';
 
 const propTypes = {
     sectionRef: PropTypes.shape({}).isRequired,
@@ -31,13 +32,13 @@ function WelcomeSection({ sectionRef }) {
                     <figcaption>&mdash; Mark Twain</figcaption>
                 </figure>
             </div>
-            <PageSectionParagraph title="About Me">
+            <Paragraph title="About Me">
                 I&#39;m a web developer at work but also a game development
                 enthusiast at home. I am passionate about building applications
                 with responsive UI, accessibility, and a seamless flow in UX. I
                 believe in strong communication, leadership, and keeping a
                 growth-oriented mindset.
-            </PageSectionParagraph>
+            </Paragraph>
             <div className="welcome-page-section-icon-buttons">
                 <IconButton
                     href="https://www.linkedin.com/in/mkccasapao/"

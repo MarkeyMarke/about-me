@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
+import cn from 'classnames';
 import { useState } from 'react';
 import Tab from './Tab';
 import TabPanel from './TabPanel';
+import './__styles__/Tabs.scss';
 
 const propTypes = {
     tabData: PropTypes.arrayOf(
@@ -23,13 +25,15 @@ const defaultProps = {
 function Tabs({ tabData, className }) {
     const [selectedTab, setSelectedTab] = useState(tabData[0].id);
 
+    const tabsClassName = cn('tabs', className);
+
     const handleSelectTab = (e, id) => {
         setSelectedTab(id);
     };
 
     return (
         <>
-            <div role="tablist" className={className}>
+            <div role="tablist" className={tabsClassName}>
                 {tabData.map(({ id, label, tabClassName }) => (
                     <Tab
                         label={label}

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
-import './styles/IconButton.scss';
+import './__styles__/IconButton.scss';
 
 const propTypes = {
     icon: PropTypes.shape({}).isRequired,

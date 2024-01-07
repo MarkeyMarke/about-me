@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { Scrollspy } from '@makotot/ghostui';
 import NavBar from './NavBar';
-import './styles/App.scss';
+import './__styles__/App.scss';
 import WelcomeSection from './Sections/WelcomeSection';
 import ExperienceSection from './Sections/ExperienceSection';
 import DNDSection from './Sections/DNDSection';
