@@ -8,9 +8,11 @@ function AnimatedWallpaper() {
     useMovingCircles(containerRef);
     return (
         <div className="wallpaper-container" ref={containerRef}>
-            {[...Array(20).keys()].map((key) => (
-                <MovingCircle spawnDelay={key} key={key} />
-            ))}
+            <div className="wallpaper">
+                {[...Array(20).keys()].map((key) => (
+                    <MovingCircle spawnDelay={key} key={key} />
+                ))}
+            </div>
         </div>
     );
 }
