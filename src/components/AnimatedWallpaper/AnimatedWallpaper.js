@@ -8,16 +8,9 @@ function AnimatedWallpaper() {
     useMovingCircles(containerRef);
     return (
         <div className="wallpaper-container" ref={containerRef}>
-            <MovingCircle spawnDelay={0} />
-            <MovingCircle spawnDelay={1} />
-            <MovingCircle spawnDelay={2} />
-            <MovingCircle spawnDelay={3} />
-            <MovingCircle spawnDelay={4} />
-            <MovingCircle spawnDelay={5} />
-            <MovingCircle spawnDelay={6} />
-            <MovingCircle spawnDelay={7} />
-            <MovingCircle spawnDelay={8} />
-            <MovingCircle spawnDelay={9} />
+            {[...Array(20).keys()].map((key) => (
+                <MovingCircle spawnDelay={key} key={key} />
+            ))}
         </div>
     );
 }

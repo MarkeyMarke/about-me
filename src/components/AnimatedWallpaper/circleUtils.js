@@ -13,11 +13,11 @@ const getRandomNumber = (low = 0, high = 100) => {
 };
 
 export const getRandomColor = () => {
-    return CIRCLE_HEX_COLORS[getRandomNumber(0, 5)];
+    return CIRCLE_HEX_COLORS[getRandomNumber(0, CIRCLE_HEX_COLORS.length - 1)];
 };
 
 export const getRandomRadius = () => {
-    return `${getRandomNumber(10, 50)}vh`;
+    return `${getRandomNumber(10, 35)}vh`;
 };
 
 export const getRandomCoords = () => {
