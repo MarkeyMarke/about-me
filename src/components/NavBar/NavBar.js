@@ -5,7 +5,7 @@ import NavItem from './NavItem';
 import './styles/NavBar.scss';
 import SectionData from '../../constants/SectionData';
 import useMobileWidth from '../../services/useMobileWidth';
-import MobileNavBar from './MobileNavBar';
+import HamburgerNavBar from './HamburgerNavBar';
 
 const sectionDataValues = Object.values(SectionData);
 const propTypes = {
@@ -16,7 +16,7 @@ function NavBar({ scrollSpyIndex }) {
     const isMobileWidth = useMobileWidth();
 
     if (isMobileWidth) {
-        return <MobileNavBar />;
+        return <HamburgerNavBar />;
     }
 
     return (

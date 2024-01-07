@@ -8,20 +8,22 @@ html {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
 
-        .app {
-            .main-page {
-                margin-left: dimensions.$desktop-nav-width;
-                padding: 20px dimensions.$desktop-main-page-side-padding;
-                overflow-y: auto;
-                background-color: colors.$website-background;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+        .main-page {
+            margin-left: dimensions.$nav-width;
+            padding: dimensions.$main-page-vertical-padding dimensions.$main-page-horizontal-padding;
+            overflow-y: auto;
+            background-color: colors.$website-background;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-                @media (max-width: dimensions.$desktop-viewport-min-width) {
-                    margin-left: 0;
-                    align-items: flex-start;
-                }
+            @media (max-width: dimensions.$desktop-viewport-min-width) {
+                margin-left: 0;
+                align-items: flex-start;
+            }
+
+            @media (max-width: dimensions.$narrow-viewport-min-width) {
+                padding: dimensions.$mini-main-page-vertical-padding dimensions.$mini-main-page-horizontal-padding;
             }
         }
     }

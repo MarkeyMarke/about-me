@@ -3,7 +3,7 @@
 @use 'src/constants/zIndex' as zIndex;
 @use 'src/constants/deviceDimensions' as dimensions;
 
-.mobile-nav {
+.hamburger-nav {
     background-color: colors.$panel-background;
     z-index: zIndex.$nav-bar;
     position: sticky;
@@ -13,8 +13,8 @@
     button {
         position: absolute;
         top: 0;
-        height: dimensions.$mobile-nav-height;
-        width: dimensions.$mobile-nav-height;
+        height: dimensions.$hamburger-nav-height;
+        width: dimensions.$hamburger-nav-height;
         background-color: colors.$panel-background;
         border: none;
         cursor: pointer;
@@ -30,7 +30,7 @@
 
         svg {
             color: colors.$white;
-            font-size: fonts.$mobile-nav-title-font-size;
+            font-size: fonts.$hamburger-nav-title-font-size;
         }
     }
 
@@ -40,11 +40,11 @@
         justify-content: center;
         align-items: center;
         gap: 8px;
-        font-size: fonts.$mobile-nav-title-font-size;
+        font-size: fonts.$hamburger-nav-title-font-size;
         font-family: fonts.$nav-title-font-family;
         color: colors.$white;
 
-        @media (max-width: dimensions.$mobile-mini-viewport-min-width) {
+        @media (max-width: dimensions.$narrow-viewport-min-width) {
             svg {
                 display: none;
             }
@@ -58,7 +58,7 @@
             h1 {
                 margin: 0;
                 font-weight: normal;
-                font-size: fonts.$mobile-nav-title-font-size;
+                font-size: fonts.$hamburger-nav-title-font-size;
             }
         }
     }

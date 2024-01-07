@@ -5,11 +5,11 @@ import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 import SectionData from '../../constants/SectionData';
 import NavItem from './NavItem';
-import './styles/MobileNavBar.scss';
+import './styles/HamburgerNavBar.scss';
 
 const sectionDataValues = Object.values(SectionData);
 
-function MobileNavBar() {
+function HamburgerNavBar() {
     const [showMenu, setShowMenu] = useState(false);
 
     const handleMenuOpen = () => {
@@ -22,7 +22,7 @@ function MobileNavBar() {
 
     return (
         <>
-            <nav className="mobile-nav">
+            <nav className="hamburger-nav">
                 <button
                     type="button"
                     aria-label="Open navigation menu"
@@ -58,4 +58,4 @@ function MobileNavBar() {
     );
 }
 
-export default MobileNavBar;
+export default HamburgerNavBar;

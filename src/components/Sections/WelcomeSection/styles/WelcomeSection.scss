@@ -1,4 +1,5 @@
 @use 'src/constants/colors' as colors;
+@use 'src/constants/deviceDimensions' as dimensions;
 
 .welcome-page-section {
     display: flex;
@@ -9,6 +10,10 @@
         align-items: center;
         gap: 20px;
         justify-content: center;
+
+        @media (max-width: dimensions.$narrow-viewport-min-width) {
+            flex-direction: column;
+        }
 
         .profile-pic-border {
             width: 200px;
@@ -28,13 +33,17 @@
         }
 
         .quote {
-            font-size: 1.6rem;
+            font-size: 26px;
             line-height: 1.4;
             font-family: Georgia, serif;
             margin: 0;
             background-color: #3d599c;
             padding: 1em;
             border-radius: 1em;
+
+            @media (max-width: dimensions.$narrow-viewport-min-width) {
+                font-size: 20px;
+            }
 
             figcaption,
             blockquote {

@@ -1,11 +1,20 @@
-$desktop-nav-width: 300px;
-$desktop-page-section-min-width: 800px;
-$desktop-main-page-side-padding: 40px;
-// Desktop nav width + main page padding + page section minimum width
-$desktop-viewport-min-width: calc(
-    $desktop-nav-width + ($desktop-main-page-side-padding * 2) + $desktop-page-section-min-width
-);
+$nav-width: 300px;
+$page-section-min-width: 800px;
+$main-page-horizontal-padding: 40px;
+$mini-main-page-horizontal-padding: 5px;
+$main-page-vertical-padding: 20px;
+$mini-main-page-vertical-padding: 10px;
 
-$mobile-nav-height: 56px;
-// Main page padding + page section minimum width
-$mobile-mini-viewport-min-width: calc(($desktop-main-page-side-padding * 2) + $desktop-page-section-min-width);
+$hamburger-nav-height: 56px;
+
+/*
+    The minimum width needed to support normal spacing and font sizes
+    Calculates: Main page padding + page section width
+*/
+$narrow-viewport-min-width: calc(($main-page-horizontal-padding * 2) + $page-section-min-width);
+
+/*
+    The minimum width needed for screens to support side nav
+    Calculates: Side nav width + main page padding + page section width
+*/
+$desktop-viewport-min-width: calc($nav-width + $narrow-viewport-min-width);

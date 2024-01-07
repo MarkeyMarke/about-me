@@ -10,10 +10,14 @@
 .page-section {
     background-color: colors.$panel-background;
     box-shadow: 1px 5px 10px colors.$black;
-    min-width: dimensions.$desktop-page-section-min-width;
+    min-width: dimensions.$page-section-min-width;
     max-width: 1800px;
     width: 100%;
     z-index: zIndex.$page-section;
+
+    @media (max-width: dimensions.$narrow-viewport-min-width) {
+        min-width: fit-content;
+    }
 
     h1.page-section-title {
         margin: 0;
@@ -26,17 +30,29 @@
         font-family: fonts.$page-section-title-font-family;
         background-color: colors.$panel-title-background;
         color: colors.$white;
+
+        @media (max-width: dimensions.$narrow-viewport-min-width) {
+            font-size: fonts.$mini-page-section-title-font-size;
+        }
     }
 
     .page-section-content {
         color: colors.$white;
         padding: 40px;
 
+        @media (max-width: dimensions.$narrow-viewport-min-width) {
+            padding: 10px;
+        }
+
         h1.page-section-paragraph-title {
             margin-top: 20px;
             border-bottom: 1px solid colors.$white;
             padding-bottom: 4px;
             font-size: fonts.$page-section-title-font-size;
+
+            @media (max-width: dimensions.$narrow-viewport-min-width) {
+                font-size: fonts.$mini-page-section-title-font-size;
+            }
         }
 
         .page-section-paragraph {
@@ -47,7 +63,11 @@
 
             p {
                 margin: 0;
-                font-size: 20px;
+                font-size: fonts.$page-section-paragraph-font-size;
+
+                @media (max-width: dimensions.$narrow-viewport-min-width) {
+                    font-size: fonts.$mini-page-section-paragraph-font-size;
+                }
             }
         }
     }
@@ -55,9 +75,13 @@
 
 .page-section-scroll-spy-marker {
     position: relative;
-    top: -20px;
+    top: calc(-1 * dimensions.$main-page-vertical-padding);
 
     @media (max-width: dimensions.$desktop-viewport-min-width) {
-        top: calc((-1 * dimensions.$mobile-nav-height) - 20px);
+        top: calc((-1 * dimensions.$hamburger-nav-height) - dimensions.$main-page-vertical-padding);
+    }
+
+    @media (max-width: dimensions.$narrow-viewport-min-width) {
+        top: calc((-1 * dimensions.$hamburger-nav-height) - dimensions.$mini-main-page-vertical-padding);
     }
 }
