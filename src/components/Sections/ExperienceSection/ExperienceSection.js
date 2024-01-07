@@ -13,21 +13,18 @@ const tabData = [
         id: 'skills',
         label: 'Skills',
         content: <div>Skills Content Test</div>,
-        tabClassName: 'skills-tab',
         tabPanelClassName: 'skills-tab-panel',
     },
     {
         id: 'work',
         label: 'Work',
         content: <div>Work Content Test</div>,
-        tabClassName: 'work-tab',
         tabPanelClassName: 'work-tab-panel',
     },
     {
         id: 'education',
         label: 'Education',
         content: <div>Education Content Test</div>,
-        tabClassName: 'education-tab',
         tabPanelClassName: 'education-tab-panel',
     },
 ];
