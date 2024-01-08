@@ -1,3 +1,41 @@
+@use 'src/constants/fonts' as fonts;
+@use 'src/constants/colors' as colors;
+
 .experience-page-section {
-    height: 900px;
+    .skills-tab-panel {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .skills-panel-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .skills-panel-section-title {
+                line-height: unset;
+                display: flex;
+                gap: 8px;
+                align-items: flex-start;
+                justify-content: flex-start;
+                font-size: fonts.$page-section-title-font-size;
+                border-bottom: 1px solid colors.$white;
+            }
+
+            .skills-panel-section-list {
+                margin: 0;
+            }
+        }
+
+        .skills-panel-columns {
+            display: flex;
+            justify-content: space-evenly;
+
+            .skills-panel-column {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
 }

@@ -37,7 +37,7 @@ function WelcomeSection({ sectionRef }) {
                 I&#39;m a web developer at work but also a game development
                 enthusiast at home. I am passionate about building applications
                 with responsive UI, accessibility, and a seamless flow in UX. I
-                believe in strong communication, leadership, and keeping a
+                believe in strong communication and leadership with a
                 growth-oriented mindset.
             </Paragraph>
             <div className="welcome-page-section-icon-buttons">

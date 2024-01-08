@@ -4,8 +4,9 @@ import PropTypes from 'prop-types';
 import NavItem from './NavItem';
 import './__styles__/NavBar.scss';
 import SectionData from '../../constants/SectionData';
-import useMobileWidth from '../../services/useMobileWidth';
+import useIsDeviceNarrower from '../../services/useIsDeviceNarrower';
 import HamburgerNavBar from './HamburgerNavBar';
+import { DESKTOP_VIEWPORT_MIN_WIDTH_PX } from '../../constants/DeviceDimensions';
 
 const sectionDataValues = Object.values(SectionData);
 const propTypes = {
@@ -13,9 +14,9 @@ const propTypes = {
 };
 
 function NavBar({ scrollSpyIndex }) {
-    const isMobileWidth = useMobileWidth();
+    const isNarrow = useIsDeviceNarrower(DESKTOP_VIEWPORT_MIN_WIDTH_PX);
 
-    if (isMobileWidth) {
+    if (isNarrow) {
         return <HamburgerNavBar />;
     }
 

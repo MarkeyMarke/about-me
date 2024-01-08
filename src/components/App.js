@@ -23,12 +23,12 @@ function App() {
                         <NavBar
                             scrollSpyIndex={currentElementIndexInViewport}
                         />
-                        <div className="main-page">
+                        <main className="main-page">
                             <WelcomeSection sectionRef={welcomeRef} />
                             <ExperienceSection sectionRef={expRef} />
                             <DNDSection sectionRef={dndRef} />
                             <GameDevSection sectionRef={gameDevRef} />
-                        </div>
+                        </main>
                     </>
                 )}
             </Scrollspy>

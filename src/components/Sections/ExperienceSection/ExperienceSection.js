@@ -3,6 +3,7 @@ import PageSection from '../../PageSection';
 import SectionData from '../../../constants/SectionData';
 import Tab from '../../Tab';
 import './__styles__/ExperienceSection.scss';
+import SkillsPanel from './SkillsPanel';
 
 const propTypes = {
     sectionRef: PropTypes.shape({}).isRequired,
@@ -12,7 +13,7 @@ const tabData = [
     {
         id: 'skills',
         label: 'Skills',
-        content: <div>Skills Content Test</div>,
+        content: <SkillsPanel />,
         tabPanelClassName: 'skills-tab-panel',
     },
     {
