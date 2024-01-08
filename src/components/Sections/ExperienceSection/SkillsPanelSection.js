@@ -22,12 +22,14 @@ function SkillsPanelSection({ titleIcon, titleLabel, listItems, titleImage }) {
                 {titleIcon && <FontAwesomeIcon icon={titleIcon} />}
                 <h1>{titleLabel}</h1>
             </div>
-            <ul className="skills-panel-section-list">
-                {listItems.map((listItem) => (
-                    // Technically the contents are unique already, but we shouldn't use display values as keys
-                    <li key={getStringHashCode(listItem)}>{listItem}</li>
-                ))}
-            </ul>
+            <div className="skills-panel-section-list-container">
+                <ul className="skills-panel-section-list">
+                    {listItems.map((listItem) => (
+                        // Technically the contents are unique already, but we shouldn't use display values as keys
+                        <li key={getStringHashCode(listItem)}>{listItem}</li>
+                    ))}
+                </ul>
+            </div>
         </section>
     );
 }

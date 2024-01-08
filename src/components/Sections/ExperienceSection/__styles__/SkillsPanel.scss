@@ -41,8 +41,14 @@
             }
         }
 
-        .skills-panel-section-list {
-            margin: 0;
+        .skills-panel-section-list-container {
+            background-color: colors.$panel-tab-panel-section-background;
+            border-radius: 8px;
+            padding: 20px;
+
+            .skills-panel-section-list {
+                margin: 0;
+            }
         }
     }
 
