@@ -3,16 +3,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import getStringHashCode from '../../../services/getStringHashCode';
 
 const propTypes = {
-    titleIcon: PropTypes.shape({}).isRequired,
+    titleIcon: PropTypes.shape({}),
+    titleImage: PropTypes.node,
     titleLabel: PropTypes.string.isRequired,
     listItems: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-function SkillsPanelSection({ titleIcon, titleLabel, listItems }) {
+const defaultProps = {
+    titleImage: undefined,
+    titleIcon: undefined,
+};
+
+function SkillsPanelSection({ titleIcon, titleLabel, listItems, titleImage }) {
     return (
         <section className="skills-panel-section">
             <div className="skills-panel-section-title">
-                <FontAwesomeIcon icon={titleIcon} />
+                {titleImage}
+                {titleIcon && <FontAwesomeIcon icon={titleIcon} />}
                 <h1>{titleLabel}</h1>
             </div>
             <ul className="skills-panel-section-list">
@@ -26,4 +33,5 @@ function SkillsPanelSection({ titleIcon, titleLabel, listItems }) {
 }
 
 SkillsPanelSection.propTypes = propTypes;
+SkillsPanelSection.defaultProps = defaultProps;
 export default SkillsPanelSection;

@@ -4,7 +4,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import PropTypes from 'prop-types';
 import PageSection from '../../PageSection';
 import Paragraph from '../../Paragraph';
-import markProfile from '../../../images/MarkProfile.jpg';
+import markProfile from '../../../images/markProfile.jpg';
 import SectionData from '../../../constants/SectionData';
 import IconButton from '../../IconButton';
 import './__styles__/WelcomeSection.scss';

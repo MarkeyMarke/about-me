@@ -10,7 +10,6 @@
 .page-section {
     background-color: colors.$panel-background;
     box-shadow: 1px 5px 10px colors.$black;
-    min-width: dimensions.$page-section-min-width;
     max-width: 1400px;
     width: 100%;
     z-index: zIndex.$page-section;

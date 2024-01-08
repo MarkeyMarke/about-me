@@ -14,7 +14,7 @@ function useIsDeviceNarrower(widthInPX) {
         updateSize();
         return () => window.removeEventListener('resize', updateSize);
     }, []);
-    return size < widthInPX;
+    return size <= widthInPX;
 }
 
 export default useIsDeviceNarrower;

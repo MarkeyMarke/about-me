@@ -1,5 +1,6 @@
 @use 'src/constants/fonts' as fonts;
 @use 'src/constants/colors' as colors;
+@use 'src/constants/deviceDimensions' as dimensions;
 
 .experience-page-section {
     .skills-tab-panel {
@@ -20,6 +21,25 @@
                 justify-content: flex-start;
                 font-size: fonts.$page-section-title-font-size;
                 border-bottom: 1px solid colors.$white;
+
+                @media (max-width: dimensions.$narrow-viewport-min-width) {
+                    font-size: fonts.$mini-page-section-title-font-size;
+                }
+
+                h1 {
+                    font-size: fonts.$page-section-title-font-size;
+
+                    @media (max-width: dimensions.$narrow-viewport-min-width) {
+                        font-size: fonts.$mini-page-section-title-font-size;
+                    }
+                }
+
+                // Custom icons
+                svg:not(.svg-inline--fa) {
+                    height: 40px;
+                    width: auto;
+                    color: colors.$white;
+                }
             }
 
             .skills-panel-section-list {
