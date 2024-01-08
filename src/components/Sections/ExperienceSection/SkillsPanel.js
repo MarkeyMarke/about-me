@@ -8,11 +8,11 @@ import {
     MAIN_PAGE_HORIZONTAL_PADDING_PX,
 } from '../../../constants/DeviceDimensions';
 
-const DOUBLE_COLUMN_PANEL_MIN_WIDTH = 1200;
+const DOUBLE_COLUMN_PANEL_MIN_WIDTH_PX = 1200;
 const DOUBLE_COLUMN_VIEWPORT_PX =
     NAV_WIDTH_PX +
     2 * MAIN_PAGE_HORIZONTAL_PADDING_PX +
-    DOUBLE_COLUMN_PANEL_MIN_WIDTH;
+    DOUBLE_COLUMN_PANEL_MIN_WIDTH_PX;
 
 const jsSkillsSection = (
     <SkillsPanelSection
