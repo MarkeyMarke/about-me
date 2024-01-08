@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.63bc6818.css",
-    "main.js": "/static/js/main.2f435f7e.js",
+    "main.css": "/static/css/main.29123fad.css",
+    "main.js": "/static/js/main.1a888975.js",
     "static/media/markProfile.jpg": "/static/media/markProfile.d59cdb81345da2670a74.jpg",
+    "static/media/peerConnectionsLogo.png": "/static/media/peerConnectionsLogo.65e370a4de977f9af777.png",
     "index.html": "/index.html",
-    "main.63bc6818.css.map": "/static/css/main.63bc6818.css.map",
-    "main.2f435f7e.js.map": "/static/js/main.2f435f7e.js.map"
+    "main.29123fad.css.map": "/static/css/main.29123fad.css.map",
+    "main.1a888975.js.map": "/static/js/main.1a888975.js.map"
   },
   "entrypoints": [
-    "static/css/main.63bc6818.css",
-    "static/js/main.2f435f7e.js"
+    "static/css/main.29123fad.css",
+    "static/js/main.1a888975.js"
   ]
 }
