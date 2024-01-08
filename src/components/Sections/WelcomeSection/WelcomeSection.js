@@ -1,5 +1,6 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import PropTypes from 'prop-types';
 import PageSection from '../../PageSection';
 import Paragraph from '../../Paragraph';
@@ -49,6 +50,11 @@ function WelcomeSection({ sectionRef }) {
                     href="https://github.com/MarkeyMarke"
                     icon={faGithub}
                     ariaLabel="GitHub link"
+                />
+                <IconButton
+                    href="mailto:casapao.markkenneth@gmail.com"
+                    icon={faEnvelope}
+                    ariaLabel="Email link"
                 />
             </div>
         </PageSection>
