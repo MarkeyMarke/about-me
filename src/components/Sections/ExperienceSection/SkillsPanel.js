@@ -66,7 +66,7 @@ const cSharpSkillsSection = (
             </svg>
         }
         titleLabel="C#"
-        listItems={['Developing games using Unity Game Engine']}
+        listItems={['Developing games using Unity']}
     />
 );
 
