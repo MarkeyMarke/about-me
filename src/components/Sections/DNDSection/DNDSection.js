@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import PageSection from '../../PageSection';
-import SectionData from '../../../constants/SectionData';
+import sectionData from '../../../constants/sectionData';
 import './__styles__/DNDSection.scss';
 
 const propTypes = {
@@ -10,8 +10,8 @@ const propTypes = {
 function DNDSection({ sectionRef }) {
     return (
         <PageSection
-            title={SectionData.DND.label}
-            scrollSpyId={SectionData.DND.id}
+            title={sectionData.DND.label}
+            scrollSpyId={sectionData.DND.id}
             sectionRef={sectionRef}
             className="dnd-page-section"
         >

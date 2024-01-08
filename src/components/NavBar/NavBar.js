@@ -3,12 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import NavItem from './NavItem';
 import './__styles__/NavBar.scss';
-import SectionData from '../../constants/SectionData';
+import sectionData from '../../constants/sectionData';
 import useIsDeviceNarrower from '../../services/useIsDeviceNarrower';
 import HamburgerNavBar from './HamburgerNavBar';
-import { DESKTOP_VIEWPORT_MIN_WIDTH_PX } from '../../constants/DeviceDimensions';
+import { DESKTOP_VIEWPORT_MIN_WIDTH_PX } from '../../constants/deviceDimensions';
 
-const sectionDataValues = Object.values(SectionData);
+const sectionDataValues = Object.values(sectionData);
 const propTypes = {
     scrollSpyIndex: PropTypes.number.isRequired,
 };

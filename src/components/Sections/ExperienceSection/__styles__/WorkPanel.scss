@@ -1,0 +1,96 @@
+@use 'src/constants/colors' as colors;
+@use 'src/constants/fonts' as fonts;
+@use 'src/constants/deviceDimensions' as dimensions;
+
+.work-tab-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .work-panel-section {
+        display: flex;
+        gap: 40px;
+
+        @media (max-width: dimensions.$narrow-viewport-min-width) {
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .work-panel-company-image-border {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            min-width: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 10px solid colors.$white;
+            box-sizing: content-box;
+
+            &:focus-within {
+                .work-panel-company-image-overlay {
+                    opacity: 0.6;
+                }
+            }
+
+            .work-panel-company-image-overlay {
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+                background-color: colors.$black;
+                opacity: 0;
+                position: absolute;
+                transition: opacity 0.5s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: colors.$white;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+
+            img {
+                display: inline;
+                margin: 0 auto;
+                height: 100%;
+                width: auto;
+            }
+        }
+
+        .work-panel-company-details {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 10px;
+
+            h1 {
+                font-size: fonts.$page-section-title-font-size;
+                border-bottom: 1px solid colors.$white;
+                padding-bottom: 8px;
+                margin: 0;
+
+                @media (max-width: dimensions.$narrow-viewport-min-width) {
+                    font-size: fonts.$mini-page-section-title-font-size;
+                }
+            }
+
+            p {
+                margin: 0;
+            }
+
+            .work-panel-company-role-details {
+                background-color: colors.$panel-tab-panel-section-background;
+                border-radius: 8px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+
+                ul {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import PageSection from '../../PageSection';
 import Paragraph from '../../Paragraph';
 import markProfile from '../../../images/markProfile.jpg';
-import SectionData from '../../../constants/SectionData';
+import sectionData from '../../../constants/sectionData';
 import IconButton from '../../IconButton';
 import './__styles__/WelcomeSection.scss';
 
@@ -17,7 +17,7 @@ function WelcomeSection({ sectionRef }) {
     return (
         <PageSection
             title="Nice to meet you, I'm Mark"
-            scrollSpyId={SectionData.WELCOME.id}
+            scrollSpyId={sectionData.WELCOME.id}
             sectionRef={sectionRef}
             className="welcome-page-section"
         >

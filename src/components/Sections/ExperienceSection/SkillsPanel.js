@@ -6,7 +6,8 @@ import useIsDeviceNarrower from '../../../services/useIsDeviceNarrower';
 import {
     NAV_WIDTH_PX,
     MAIN_PAGE_HORIZONTAL_PADDING_PX,
-} from '../../../constants/DeviceDimensions';
+} from '../../../constants/deviceDimensions';
+import './__styles__/SkillsPanel.scss';
 
 const DOUBLE_COLUMN_PANEL_MIN_WIDTH_PX = 1200;
 const DOUBLE_COLUMN_VIEWPORT_PX =

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import PageSection from '../../PageSection';
-import SectionData from '../../../constants/SectionData';
+import sectionData from '../../../constants/sectionData';
 import './__styles__/GameDevSection.scss';
 
 const propTypes = {
@@ -10,8 +10,8 @@ const propTypes = {
 function GameDevSection({ sectionRef }) {
     return (
         <PageSection
-            title={SectionData.GAME_DEV.label}
-            scrollSpyId={SectionData.GAME_DEV.id}
+            title={sectionData.GAME_DEV.label}
+            scrollSpyId={sectionData.GAME_DEV.id}
             sectionRef={sectionRef}
             className="game-dev-page-section"
         >

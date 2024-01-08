@@ -3,11 +3,11 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
-import SectionData from '../../constants/SectionData';
+import sectionData from '../../constants/sectionData';
 import NavItem from './NavItem';
 import './__styles__/HamburgerNavBar.scss';
 
-const sectionDataValues = Object.values(SectionData);
+const sectionDataValues = Object.values(sectionData);
 
 function HamburgerNavBar() {
     const [showMenu, setShowMenu] = useState(false);
