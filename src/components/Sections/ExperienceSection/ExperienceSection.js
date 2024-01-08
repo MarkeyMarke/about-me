@@ -4,6 +4,7 @@ import sectionData from '../../../constants/sectionData';
 import Tab from '../../Tab';
 import SkillsPanel from './SkillsPanel';
 import WorkPanel from './WorkPanel';
+import EducationPanel from './EducationPanel';
 
 const propTypes = {
     sectionRef: PropTypes.shape({}).isRequired,
@@ -25,7 +26,7 @@ const tabData = [
     {
         id: 'education',
         label: 'Education',
-        content: <div>Education Content Test</div>,
+        content: <EducationPanel />,
         tabPanelClassName: 'education-tab-panel',
     },
 ];

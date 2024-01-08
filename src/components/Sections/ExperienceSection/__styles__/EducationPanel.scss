@@ -2,12 +2,12 @@
 @use 'src/constants/fonts' as fonts;
 @use 'src/constants/deviceDimensions' as dimensions;
 
-.work-tab-panel {
+.education-tab-panel {
     display: flex;
     flex-direction: column;
     gap: 20px;
 
-    .work-panel-section {
+    .education-panel-section {
         display: flex;
         gap: 40px;
 
@@ -17,11 +17,11 @@
             align-items: center;
         }
 
-        .work-panel-company-details {
+        .education-panel-school-details {
             display: flex;
             flex-direction: column;
-            flex-grow: 1;
             gap: 10px;
+            flex-grow: 1;
 
             h1 {
                 font-size: fonts.$page-section-title-font-size;
@@ -34,19 +34,24 @@
                 }
             }
 
-            p {
-                margin: 0;
-            }
-
-            .work-panel-company-role-details {
+            .education-panel-school-description {
                 background-color: colors.$panel-tab-panel-section-background;
                 border-radius: 8px;
                 padding: 20px;
                 display: flex;
                 flex-direction: column;
 
-                ul {
+                span {
+                    margin-bottom: 10px;
+                }
+
+                dl {
                     margin: 0;
+
+                    dd {
+                        padding-left: 2rem;
+                        margin-bottom: 10px;
+                    }
                 }
             }
         }

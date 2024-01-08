@@ -1,0 +1,48 @@
+@use 'src/constants/colors' as colors;
+
+.image-button-border {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid colors.$white;
+    box-sizing: content-box;
+    background-color: colors.$white;
+
+    &:focus-within {
+        .image-button-overlay {
+            opacity: 0.6;
+        }
+    }
+
+    .image-button-overlay {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        background-color: colors.$black;
+        opacity: 0;
+        position: absolute;
+        transition: opacity 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: colors.$white;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 0.8;
+        }
+    }
+
+    img {
+        display: inline;
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+    }
+}
