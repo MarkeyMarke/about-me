@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import PageSection from '../../PageSection';
 import sectionData from '../../../constants/sectionData';
+import DiceRoller from './DiceRoller';
 import './__styles__/DNDSection.scss';
 
 const propTypes = {
@@ -15,7 +16,7 @@ function DNDSection({ sectionRef }) {
             sectionRef={sectionRef}
             className="dnd-page-section"
         >
-            <span>TESTING TEXT CONTENT</span>
+            <DiceRoller />
         </PageSection>
     );
 }

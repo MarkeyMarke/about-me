@@ -38,7 +38,7 @@ function useMovingCircles(containerRef) {
                 true,
             );
         };
-    });
+    }, []);
 }
 
 export default useMovingCircles;

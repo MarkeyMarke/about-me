@@ -1,3 +1,5 @@
+import getRandomNumber from '../../services/getRandomNumber';
+
 const CIRCLE_HEX_COLORS = [
     '#c6e3fd',
     '#a6cbec',
@@ -6,11 +8,6 @@ const CIRCLE_HEX_COLORS = [
     '#95ceff',
     '#cce7ff',
 ];
-
-const getRandomNumber = (low = 0, high = 100) => {
-    const r = Math.floor(Math.random() * (high - low + 1)) + low;
-    return r;
-};
 
 export const getRandomColor = () => {
     return CIRCLE_HEX_COLORS[getRandomNumber(0, CIRCLE_HEX_COLORS.length - 1)];

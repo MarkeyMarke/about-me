@@ -1,0 +1,54 @@
+@use 'src/constants/colors' as colors;
+
+.dice-roller-button {
+    padding: 0;
+    display: flex;
+    padding: 20px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: colors.$button-default;
+    border: none;
+    outline: none;
+    transition: background-color 0.5s;
+
+    &:focus,
+    &:hover {
+        background-color: colors.$button-selected;
+    }
+
+    &:active {
+        background-color: colors.$button-active;
+    }
+
+    span {
+        position: absolute;
+        font-size: 50px;
+        transition: opacity 0.2s;
+        opacity: 1;
+        color: colors.$white;
+
+        &.rolling {
+            opacity: 0;
+        }
+    }
+
+    .dice {
+        font-size: 150px;
+        animation-name: spin;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        color: #1a2d59;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
