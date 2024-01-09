@@ -25,6 +25,7 @@ function DiceRoller() {
     const handleClick = () => {
         setIsRolling(true);
         const dice = diceRef.current;
+        dice.style.animationPlayState = 'running';
         dice.style.animationName = 'none';
         window.requestAnimationFrame(() => {
             setTimeout(() => {

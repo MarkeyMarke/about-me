@@ -8,17 +8,13 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: colors.$button-default;
+    background-color: colors.$button-selected;
     border: none;
     outline: none;
     transition: background-color 0.5s;
 
     &:focus,
     &:hover {
-        background-color: colors.$button-selected;
-    }
-
-    &:active {
         background-color: colors.$button-active;
     }
 
@@ -28,6 +24,7 @@
         transition: opacity 0.2s;
         opacity: 1;
         color: colors.$white;
+        z-index: 100;
 
         &.rolling {
             opacity: 0;
@@ -40,6 +37,7 @@
         animation-duration: 0.2s;
         animation-iteration-count: 1;
         animation-timing-function: ease-in-out;
+        animation-play-state: paused;
         color: #1a2d59;
     }
 }
