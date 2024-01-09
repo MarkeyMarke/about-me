@@ -16,12 +16,18 @@
     &:focus,
     &:hover {
         background-color: colors.$button-active;
+
+        span {
+            font-size: 60px;
+        }
     }
 
     span {
         position: absolute;
         font-size: 50px;
-        transition: opacity 0.2s;
+        transition:
+            opacity 0.2s,
+            font-size 0.2s;
         opacity: 1;
         color: colors.$white;
         z-index: 100;
