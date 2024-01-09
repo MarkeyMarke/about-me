@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Scrollspy } from '@makotot/ghostui';
 import NavBar from './NavBar';
 import WelcomeSection from './Sections/WelcomeSection';
@@ -13,6 +13,18 @@ function App() {
     const expRef = useRef(null);
     const dndRef = useRef(null);
     const gameDevRef = useRef(null);
+
+    useEffect(() => {
+        if (window.location.href.indexOf('#') > 0) {
+            const hash = window.location.href.split('#')[1];
+            const anchorMarker = document.querySelector(`#${hash}`);
+            if (anchorMarker) {
+                setTimeout(() => {
+                    anchorMarker.scrollIntoView(true);
+                }, 50);
+            }
+        }
+    }, []);
 
     return (
         <div className="app">
