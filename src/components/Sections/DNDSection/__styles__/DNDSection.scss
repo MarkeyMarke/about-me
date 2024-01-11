@@ -1,3 +1,58 @@
+@use 'src/constants/colors' as colors;
+@use 'src/constants/deviceDimensions' as dimensions;
+@use 'src/constants/fonts' as fonts;
+
 .dnd-page-section {
-    height: 900px;
+    .interactive-dnd-description {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+
+        @media (max-width: dimensions.$narrow-viewport-min-width) {
+            flex-direction: column;
+        }
+
+        .initiative-roller {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            & > span {
+                font-size: fonts.$paragraph-font-size;
+            }
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .dnd-links {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+
+        @media (max-width: dimensions.$narrow-viewport-min-width) {
+            flex-direction: column;
+        }
+
+        .dnd-link {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+
+            span {
+                font-size: fonts.$paragraph-font-size;
+            }
+        }
+    }
 }
