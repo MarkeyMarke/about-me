@@ -29,18 +29,20 @@ function DNDSection({ sectionRef }) {
                     <Paragraph title="Why I Play D&D">
                         I share just as much passion for D&D (Dungeons and
                         Dragons) as I do for software development. I own nearly
-                        every sourcebook to date in D&D Beyond, and have been
-                        playing with the same group since 2018. Nowadays, we
-                        play digitally on Foundry VTT with 100+ mods that run in
+                        every sourcebook in D&D Beyond and have been playing
+                        with the same group since 2018. Nowadays, we play
+                        digitally on Foundry VTT with 100+ mods that run in
                         JavaScript.
                         <br />
                         <br />I am the current dungeon master of the group,
                         meaning that I am in charge of setting up the D&D
-                        campaign. Such a position has taught me the importance
-                        of leadership, communication, and being a team player.
-                        In a way, being a dungeon master has also served my itch
-                        for game development with all the digital aspects of
-                        working in Foundry VTT.
+                        campaign. This includes things like running a server,
+                        planning adventures, and implementing features on the
+                        virtual tabletop. Such a position has taught me the
+                        importance of leadership, communication, and being a
+                        team player. Being a dungeon master has also served my
+                        itch for game development with all the digital aspects
+                        of working in Foundry VTT.
                     </Paragraph>
                 </div>
             </div>
