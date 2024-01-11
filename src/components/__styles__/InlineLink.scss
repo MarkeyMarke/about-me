@@ -1,0 +1,16 @@
+@use 'src/constants/colors' as colors;
+
+a.inline-link {
+    color: #d5fdff;
+    text-decoration: none;
+    transition: color 0.5s;
+
+    &:hover,
+    &:focus {
+        color: colors.$button-selected;
+    }
+
+    &:active {
+        color: colors.$button-active;
+    }
+}

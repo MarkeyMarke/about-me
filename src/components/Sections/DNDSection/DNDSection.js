@@ -6,13 +6,36 @@ import './__styles__/DNDSection.scss';
 import ImageButton from '../../ImageButton';
 import foundryLogo from '../../../images/foundryLogo.png';
 import dndBeyond from '../../../images/dndBeyondLogo.png';
+import forgeLogo from '../../../images/forgeLogo.png';
 import Paragraph from '../../Paragraph';
+import InlineLink from '../../InlineLink';
+
+const foundryHref = 'https://foundryvtt.com/';
+const forgeHref = 'https://forge-vtt.com/';
+const dndBeyondHref = 'https://www.dndbeyond.com/';
 
 const propTypes = {
     sectionRef: PropTypes.shape({}).isRequired,
 };
 
 function DNDSection({ sectionRef }) {
+    const foundryVTTLink = (
+        <InlineLink href={foundryHref} linkText="Foundry VTT" />
+    );
+
+    const dndBeyondLink = (
+        <InlineLink href={dndBeyondHref} linkText="D&D Beyond" />
+    );
+
+    const theForgeLink = <InlineLink href={forgeHref} linkText="The Forge" />;
+
+    const lineBreak = (
+        <>
+            <br />
+            <br />
+        </>
+    );
+
     return (
         <PageSection
             title={sectionData.DND.label}
@@ -29,12 +52,13 @@ function DNDSection({ sectionRef }) {
                     <Paragraph title="Why I Play D&D">
                         I share just as much passion for D&D (Dungeons and
                         Dragons) as I do for software development. I own nearly
-                        every sourcebook in D&D Beyond and have been playing
-                        with the same group since 2018. Nowadays, we play
-                        digitally on Foundry VTT with 100+ mods that run in
-                        JavaScript.
-                        <br />
-                        <br />I am the current dungeon master of the group,
+                        every sourcebook in {dndBeyondLink} and have been
+                        playing with the same group since 2018. Currently, we
+                        play digitally on a virtual tabletop like{' '}
+                        {foundryVTTLink} along with 100+ mods that run in
+                        JavaScript. Rather than hosting the game on my computer,
+                        we use a hosting provider like {theForgeLink}.
+                        {lineBreak}I am the current dungeon master of the group,
                         meaning that I am in charge of setting up the D&D
                         campaign. This includes things like running a server,
                         planning adventures, and implementing features on the
@@ -51,15 +75,23 @@ function DNDSection({ sectionRef }) {
                     <ImageButton
                         image={foundryLogo}
                         imageAltText="Foundry Virtual Tabletop logo"
-                        href="https://foundryvtt.com/"
+                        href={foundryHref}
                     />
                     <span>Foundry VTT</span>
                 </div>
                 <div className="dnd-link">
                     <ImageButton
+                        image={forgeLogo}
+                        imageAltText="The Forge logo"
+                        href={forgeHref}
+                    />
+                    <span>The Forge</span>
+                </div>
+                <div className="dnd-link">
+                    <ImageButton
                         image={dndBeyond}
                         imageAltText="D&D Beyond logo"
-                        href="https://www.dndbeyond.com/"
+                        href={dndBeyondHref}
                     />
                     <span>D&D Beyond</span>
                 </div>
