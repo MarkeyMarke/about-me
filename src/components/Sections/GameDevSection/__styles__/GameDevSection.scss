@@ -10,6 +10,10 @@
 
         @media (max-width: dimensions.$narrow-viewport-min-width) {
             flex-direction: column;
+
+            .image-link-container {
+                order: 2;
+            }
         }
 
         .description {
