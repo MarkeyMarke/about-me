@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.97c32e77.css",
+    "main.css": "/static/css/main.aaf1492a.css",
     "main.js": "/static/js/main.1ba38445.js",
     "static/media/foundryLogo.png": "/static/media/foundryLogo.31b3e1426ade19e03e75.png",
     "static/media/forgeLogo.png": "/static/media/forgeLogo.ca6c44961bf1c16769c7.png",
@@ -10,11 +10,11 @@
     "static/media/mhsLogo.jpg": "/static/media/mhsLogo.48a493aff9fb0a091f57.jpg",
     "static/media/peerConnectionsLogo.png": "/static/media/peerConnectionsLogo.65e370a4de977f9af777.png",
     "index.html": "/index.html",
-    "main.97c32e77.css.map": "/static/css/main.97c32e77.css.map",
+    "main.aaf1492a.css.map": "/static/css/main.aaf1492a.css.map",
     "main.1ba38445.js.map": "/static/js/main.1ba38445.js.map"
   },
   "entrypoints": [
-    "static/css/main.97c32e77.css",
+    "static/css/main.aaf1492a.css",
     "static/js/main.1ba38445.js"
   ]
 }
