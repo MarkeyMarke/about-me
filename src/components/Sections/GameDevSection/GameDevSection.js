@@ -81,9 +81,9 @@ function GameDevSection({ sectionRef }) {
                         Right before my last year of college, I worked together
                         with some friends and managed to produce a game using{' '}
                         {unityLink} as a game engine. You can play it on{' '}
-                        {shootyLink} for a small price, but it was less about
-                        the money and more about the fun and learning
-                        experiences it brought.
+                        {shootyLink} for a small price, but I was in it less for
+                        the money and more for the fun and learning experiences
+                        it brought.
                     </Paragraph>
                 </div>
             </div>
