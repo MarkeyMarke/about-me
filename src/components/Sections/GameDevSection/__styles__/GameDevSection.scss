@@ -1,3 +1,21 @@
+@use 'src/constants/colors' as colors;
+@use 'src/constants/deviceDimensions' as dimensions;
+@use 'src/constants/fonts' as fonts;
+
 .game-dev-page-section {
-    height: 900px;
+    .game-development-description-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media (max-width: dimensions.$narrow-viewport-min-width) {
+            flex-direction: column;
+        }
+
+        .description {
+            h1 {
+                margin-top: 0;
+            }
+        }
+    }
 }

@@ -43,8 +43,8 @@ function DNDSection({ sectionRef }) {
             sectionRef={sectionRef}
             className="dnd-page-section"
         >
-            <div className="interactive-dnd-description">
-                <div className="initiative-roller">
+            <div className="dnd-description-container">
+                <div className="initiative-roller-container">
                     <DiceRoller />
                     <span>Roll for initiative!</span>
                 </div>
@@ -71,30 +71,24 @@ function DNDSection({ sectionRef }) {
                 </div>
             </div>
             <div className="dnd-links">
-                <div className="dnd-link">
-                    <ImageLink
-                        image={foundryLogo}
-                        imageAltText="Foundry Virtual Tabletop logo"
-                        href={foundryHref}
-                    />
-                    <span>Foundry VTT</span>
-                </div>
-                <div className="dnd-link">
-                    <ImageLink
-                        image={forgeLogo}
-                        imageAltText="The Forge logo"
-                        href={forgeHref}
-                    />
-                    <span>The Forge</span>
-                </div>
-                <div className="dnd-link">
-                    <ImageLink
-                        image={dndBeyond}
-                        imageAltText="D&D Beyond logo"
-                        href={dndBeyondHref}
-                    />
-                    <span>D&D Beyond</span>
-                </div>
+                <ImageLink
+                    image={foundryLogo}
+                    imageAltText="Foundry Virtual Tabletop logo"
+                    href={foundryHref}
+                    subText="Foundry VTT"
+                />
+                <ImageLink
+                    image={forgeLogo}
+                    imageAltText="The Forge logo"
+                    href={forgeHref}
+                    subText="The Forge"
+                />
+                <ImageLink
+                    image={dndBeyond}
+                    imageAltText="D&D Beyond logo"
+                    href={dndBeyondHref}
+                    subText="D&D Beyond"
+                />
             </div>
         </PageSection>
     );

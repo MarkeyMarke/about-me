@@ -1,48 +1,60 @@
 @use 'src/constants/colors' as colors;
+@use 'src/constants/fonts' as fonts;
 
-.image-link-border {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    min-width: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 10px solid colors.$white;
-    box-sizing: content-box;
-    background-color: colors.$white;
+.image-link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 
-    &:focus-within {
-        .image-link-overlay {
-            opacity: 0.6;
-        }
-    }
-
-    .image-link-overlay {
-        height: 100%;
-        width: 100%;
+    .image-link-border {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        min-width: 200px;
+        overflow: hidden;
         border-radius: 50%;
-        background-color: colors.$black;
-        opacity: 0;
-        position: absolute;
-        transition: opacity 0.5s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: colors.$white;
+        border: 10px solid colors.$white;
+        box-sizing: content-box;
+        background-color: colors.$white;
 
-        &:hover {
-            opacity: 0.6;
+        &:focus-within {
+            .image-link-overlay {
+                opacity: 0.6;
+            }
         }
 
-        &:active {
-            opacity: 0.8;
+        .image-link-overlay {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            background-color: colors.$black;
+            opacity: 0;
+            position: absolute;
+            transition: opacity 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: colors.$white;
+
+            &:hover {
+                opacity: 0.6;
+            }
+
+            &:active {
+                opacity: 0.8;
+            }
+        }
+
+        img {
+            display: inline;
+            margin: 0 auto;
+            height: 100%;
+            width: auto;
         }
     }
 
-    img {
-        display: inline;
-        margin: 0 auto;
-        height: 100%;
-        width: auto;
+    span {
+        font-size: fonts.$paragraph-font-size;
     }
 }
