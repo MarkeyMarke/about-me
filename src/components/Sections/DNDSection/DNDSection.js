@@ -3,7 +3,7 @@ import PageSection from '../../PageSection';
 import sectionData from '../../../constants/sectionData';
 import DiceRoller from './DiceRoller';
 import './__styles__/DNDSection.scss';
-import ImageButton from '../../ImageButton';
+import ImageLink from '../../ImageLink';
 import foundryLogo from '../../../images/foundryLogo.png';
 import dndBeyond from '../../../images/dndBeyondLogo.png';
 import forgeLogo from '../../../images/forgeLogo.png';
@@ -72,7 +72,7 @@ function DNDSection({ sectionRef }) {
             </div>
             <div className="dnd-links">
                 <div className="dnd-link">
-                    <ImageButton
+                    <ImageLink
                         image={foundryLogo}
                         imageAltText="Foundry Virtual Tabletop logo"
                         href={foundryHref}
@@ -80,7 +80,7 @@ function DNDSection({ sectionRef }) {
                     <span>Foundry VTT</span>
                 </div>
                 <div className="dnd-link">
-                    <ImageButton
+                    <ImageLink
                         image={forgeLogo}
                         imageAltText="The Forge logo"
                         href={forgeHref}
@@ -88,7 +88,7 @@ function DNDSection({ sectionRef }) {
                     <span>The Forge</span>
                 </div>
                 <div className="dnd-link">
-                    <ImageButton
+                    <ImageLink
                         image={dndBeyond}
                         imageAltText="D&D Beyond logo"
                         href={dndBeyondHref}

@@ -4,6 +4,7 @@ a.inline-link {
     color: #d5fdff;
     text-decoration: none;
     transition: color 0.5s;
+    outline: none;
 
     &:hover,
     &:focus {

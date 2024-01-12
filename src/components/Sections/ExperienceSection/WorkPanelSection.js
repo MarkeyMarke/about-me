@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import ImageButton from '../../ImageButton';
+import ImageLink from '../../ImageLink';
 import getStringHashCode from '../../../services/getStringHashCode';
 
 const propTypes = {
@@ -25,11 +25,7 @@ function WorkPanelSection({
 }) {
     return (
         <section className="work-panel-section">
-            <ImageButton
-                href={href}
-                image={image}
-                imageAltText={imageAltText}
-            />
+            <ImageLink href={href} image={image} imageAltText={imageAltText} />
             <div className="work-panel-company-details">
                 <h1>{titleText}</h1>
                 <p>{companyDescription}</p>

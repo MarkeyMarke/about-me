@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './__styles__/ImageButton.scss';
+import './__styles__/ImageLink.scss';
 
 const propTypes = {
     href: PropTypes.string.isRequired,
@@ -7,16 +7,16 @@ const propTypes = {
     imageAltText: PropTypes.string.isRequired,
 };
 
-function ImageButton({ href, image, imageAltText }) {
+function ImageLink({ href, image, imageAltText }) {
     return (
-        <div className="image-button-border">
+        <div className="image-link-border">
             <a href={href} rel="noopener noreferrer" target="_blank">
-                <div className="image-button-overlay">More info</div>
+                <div className="image-link-overlay">More info</div>
                 <img src={image} alt={imageAltText} />
             </a>
         </div>
     );
 }
 
-ImageButton.propTypes = propTypes;
-export default ImageButton;
+ImageLink.propTypes = propTypes;
+export default ImageLink;

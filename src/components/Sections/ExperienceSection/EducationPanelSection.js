@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import ImageButton from '../../ImageButton';
+import ImageLink from '../../ImageLink';
 import './__styles__/EducationPanel.scss';
 
 const propTypes = {
@@ -30,11 +30,7 @@ function EducationPanelSection({
 }) {
     return (
         <section className="education-panel-section">
-            <ImageButton
-                href={href}
-                image={image}
-                imageAltText={imageAltText}
-            />
+            <ImageLink href={href} image={image} imageAltText={imageAltText} />
             <div className="education-panel-school-details">
                 <h1>{titleText}</h1>
                 <div className="education-panel-school-description">
