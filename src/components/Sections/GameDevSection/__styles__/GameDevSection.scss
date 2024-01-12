@@ -47,6 +47,32 @@
                 font-size: fonts.$mini-paragraph-font-size;
             }
 
+            dt {
+                width: fit-content;
+                a {
+                    color: colors.$inline-link;
+                    text-decoration: none;
+                    outline: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    transition: color 0.5s;
+
+                    &:hover,
+                    &:focus {
+                        color: colors.$button-selected;
+                    }
+
+                    &:active {
+                        color: colors.$button-active;
+                    }
+
+                    svg {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+
             dd {
                 padding-left: 1em;
             }

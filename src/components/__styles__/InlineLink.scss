@@ -1,7 +1,7 @@
 @use 'src/constants/colors' as colors;
 
 a.inline-link {
-    color: #c6fcff;
+    color: colors.$inline-link;
     text-decoration: none;
     transition: color 0.5s;
     outline: none;
