@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.aaf1492a.css",
-    "main.js": "/static/js/main.ef69205c.js",
+    "main.css": "/static/css/main.ac0c19c2.css",
+    "main.js": "/static/js/main.5f24f05a.js",
     "static/media/foundryLogo.png": "/static/media/foundryLogo.31b3e1426ade19e03e75.png",
     "static/media/forgeLogo.png": "/static/media/forgeLogo.ca6c44961bf1c16769c7.png",
     "static/media/sjsuLogo.png": "/static/media/sjsuLogo.832204bcd80d3cd97ceb.png",
@@ -10,11 +10,11 @@
     "static/media/mhsLogo.jpg": "/static/media/mhsLogo.48a493aff9fb0a091f57.jpg",
     "static/media/peerConnectionsLogo.png": "/static/media/peerConnectionsLogo.65e370a4de977f9af777.png",
     "index.html": "/index.html",
-    "main.aaf1492a.css.map": "/static/css/main.aaf1492a.css.map",
-    "main.ef69205c.js.map": "/static/js/main.ef69205c.js.map"
+    "main.ac0c19c2.css.map": "/static/css/main.ac0c19c2.css.map",
+    "main.5f24f05a.js.map": "/static/js/main.5f24f05a.js.map"
   },
   "entrypoints": [
-    "static/css/main.aaf1492a.css",
-    "static/js/main.ef69205c.js"
+    "static/css/main.ac0c19c2.css",
+    "static/js/main.5f24f05a.js"
   ]
 }
