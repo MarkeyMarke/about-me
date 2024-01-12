@@ -6,7 +6,7 @@ import './__styles__/EducationPanel.scss';
 const propTypes = {
     image: PropTypes.node.isRequired,
     imageAltText: PropTypes.string.isRequired,
-    titleText: PropTypes.string.isRequired,
+    titleLabel: PropTypes.string.isRequired,
     href: PropTypes.string.isRequired,
     dateText: PropTypes.string.isRequired,
     gpa: PropTypes.number.isRequired,
@@ -22,7 +22,7 @@ const propTypes = {
 function EducationPanelSection({
     image,
     imageAltText,
-    titleText,
+    titleLabel,
     href,
     dateText,
     gpa,
@@ -32,7 +32,7 @@ function EducationPanelSection({
         <section className="education-panel-section">
             <ImageLink href={href} image={image} imageAltText={imageAltText} />
             <div className="education-panel-school-details">
-                <h1>{titleText}</h1>
+                <h1>{titleLabel}</h1>
                 <div className="education-panel-school-description">
                     <span>
                         <i>{`${dateText}, GPA: ${gpa}`}</i>

@@ -62,7 +62,7 @@ function EducationPanel() {
             <EducationPanelSection
                 image={sjsuLogo}
                 imageAltText="San Jose State University logo"
-                titleText="San Jose State University"
+                titleLabel="San Jose State University"
                 href="https://www.sjsu.edu/"
                 dateText="Class of 2020"
                 gpa={3.73}
@@ -71,7 +71,7 @@ function EducationPanel() {
             <EducationPanelSection
                 image={mhsLogo}
                 imageAltText="Milpitas High School logo"
-                titleText="Milpitas High School"
+                titleLabel="Milpitas High School"
                 href="https://mhs.musd.org/"
                 dateText="Class of 2015"
                 gpa={3.78}

@@ -5,7 +5,7 @@ import getStringHashCode from '../../../services/getStringHashCode';
 const propTypes = {
     image: PropTypes.node.isRequired,
     imageAltText: PropTypes.string.isRequired,
-    titleText: PropTypes.string.isRequired,
+    titleLabel: PropTypes.string.isRequired,
     href: PropTypes.string.isRequired,
     companyRole: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
@@ -16,7 +16,7 @@ const propTypes = {
 function WorkPanelSection({
     image,
     imageAltText,
-    titleText,
+    titleLabel,
     href,
     companyRole,
     date,
@@ -27,7 +27,7 @@ function WorkPanelSection({
         <section className="work-panel-section">
             <ImageLink href={href} image={image} imageAltText={imageAltText} />
             <div className="work-panel-company-details">
-                <h1>{titleText}</h1>
+                <h1>{titleLabel}</h1>
                 <p>{companyDescription}</p>
                 <div className="work-panel-company-role-details">
                     <span>

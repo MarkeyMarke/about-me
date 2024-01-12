@@ -9,7 +9,7 @@ function WorkPanel() {
             <WorkPanelSection
                 image={veevaSystemsLogo}
                 imageAltText="Veeva Systems logo"
-                titleText="Veeva Systems"
+                titleLabel="Veeva Systems"
                 href="https://www.veeva.com/"
                 companyRole="Software Engineer"
                 date="August 2020 - Present"
@@ -26,7 +26,7 @@ function WorkPanel() {
             <WorkPanelSection
                 image={peerConnections}
                 imageAltText="Peer Connections logo"
-                titleText="Peer Connections"
+                titleLabel="Peer Connections"
                 href="https://www.sjsu.edu/peerconnections/index.php"
                 companyRole="Supplemental Instruction Lead"
                 date="January 2018 - May 2019"
