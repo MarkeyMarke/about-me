@@ -39,7 +39,7 @@ const DESCRIPTION_ITEMS = [
     {
         term: `Hogwarts Legacy`,
         id: 'HGL',
-        description: `The player is rewarded for exploration as much as they do in combat. I found something to do in every corner of the game, to the point where it was easy to lose myself in the magical world. On top of that, the combat felt very fluid and fast-paced.`,
+        description: `The player is rewarded for exploration as much as they do for combat. I found something to do in every corner of the game, to the point where it was easy to lose myself in the magical world. On top of that, the combat felt very fluid and fast-paced.`,
     },
 ];
 
