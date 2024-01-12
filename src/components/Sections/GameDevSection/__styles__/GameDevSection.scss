@@ -18,4 +18,34 @@
             }
         }
     }
+
+    .favorite-games-container {
+        margin-top: 20px;
+
+        h1 {
+            font-size: fonts.$page-section-title-font-size;
+            margin: 0 0 20px 0;
+            padding-bottom: 4px;
+            border-bottom: 1px solid colors.$white;
+
+            @media (max-width: dimensions.$narrow-viewport-min-width) {
+                font-size: fonts.$mini-page-section-title-font-size;
+            }
+        }
+
+        .description-list-container {
+            border-radius: 8px;
+            padding: 20px;
+            background-color: colors.$panel-paragraph-background;
+            font-size: fonts.$paragraph-font-size;
+
+            @media (max-width: dimensions.$narrow-viewport-min-width) {
+                font-size: fonts.$mini-paragraph-font-size;
+            }
+
+            dd {
+                padding-left: 1em;
+            }
+        }
+    }
 }
