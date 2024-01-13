@@ -2,7 +2,7 @@
 @use 'src/constants/fonts' as fonts;
 @use 'src/constants/deviceDimensions' as dimensions;
 
-$selected-tab-color: colors.$button-selected;
+$selected-tab-color: #30488a;
 $active-tab-color: colors.$button-active;
 
 .tabs {

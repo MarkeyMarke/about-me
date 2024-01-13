@@ -8,10 +8,10 @@ a.inline-link {
 
     &:hover,
     &:focus {
-        color: colors.$button-selected;
+        color: colors.$inline-link-selected;
     }
 
     &:active {
-        color: colors.$button-active;
+        color: colors.$inline-link-active;
     }
 }

@@ -7,7 +7,7 @@
         height: 50vh;
         aspect-ratio: 1 / 1;
         animation-name: wallpaper-circle;
-        animation-duration: 12s;
+        animation-duration: 20s;
         animation-iteration-count: 1;
         animation-timing-function: linear;
         opacity: 0;
@@ -24,11 +24,11 @@
         opacity: 0;
         transform: translate(var(--startX), var(--startY));
     }
-    10% {
+    5% {
         opacity: 0.75;
         transform: translate(var(--startX), var(--startY));
     }
-    90% {
+    95% {
         opacity: 0.75;
         transform: translate(var(--endX), var(--endY));
     }
