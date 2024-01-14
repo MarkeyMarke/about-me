@@ -6,10 +6,9 @@ import './__styles__/EducationPanel.scss';
 const propTypes = {
     image: PropTypes.node.isRequired,
     imageAltText: PropTypes.string.isRequired,
-    titleLabel: PropTypes.string.isRequired,
+    titleText: PropTypes.string.isRequired,
     href: PropTypes.string.isRequired,
-    dateText: PropTypes.string.isRequired,
-    gpa: PropTypes.number.isRequired,
+    descriptionLabel: PropTypes.node.isRequired,
     descriptionItems: PropTypes.arrayOf(
         PropTypes.exact({
             term: PropTypes.string,
@@ -22,21 +21,18 @@ const propTypes = {
 function EducationPanelSection({
     image,
     imageAltText,
-    titleLabel,
+    titleText,
     href,
-    dateText,
-    gpa,
+    descriptionLabel,
     descriptionItems,
 }) {
     return (
         <section className="education-panel-section">
             <ImageLink href={href} image={image} imageAltText={imageAltText} />
             <div className="education-panel-school-details">
-                <h1>{titleLabel}</h1>
+                <h1>{titleText}</h1>
                 <div className="education-panel-school-description">
-                    <span>
-                        <i>{`${dateText}, GPA: ${gpa}`}</i>
-                    </span>
+                    {descriptionLabel}
                     <dl>
                         {descriptionItems.map(({ term, description, id }) => (
                             <Fragment key={id}>

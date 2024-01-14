@@ -56,25 +56,35 @@ const MHS_DESC_ITEMS = [
     },
 ];
 
+const sjsuDescLabel = (
+    <span>
+        <i>Class of 2020 (BS Engineering), GPA: 3.73</i>
+    </span>
+);
+
+const mhsDescLabel = (
+    <span>
+        <i>Class of 2015, GPA: 3.78</i>
+    </span>
+);
+
 function EducationPanel() {
     return (
         <>
             <EducationPanelSection
                 image={sjsuLogo}
                 imageAltText="San Jose State University logo"
-                titleLabel="San Jose State University"
+                titleText="San Jose State University"
                 href="https://www.sjsu.edu/"
-                dateText="Class of 2020"
-                gpa={3.73}
+                descriptionLabel={sjsuDescLabel}
                 descriptionItems={SJSU_DESC_ITEMS}
             />
             <EducationPanelSection
                 image={mhsLogo}
                 imageAltText="Milpitas High School logo"
-                titleLabel="Milpitas High School"
+                titleText="Milpitas High School"
                 href="https://mhs.musd.org/"
-                dateText="Class of 2015"
-                gpa={3.78}
+                descriptionLabel={mhsDescLabel}
                 descriptionItems={MHS_DESC_ITEMS}
             />
         </>
