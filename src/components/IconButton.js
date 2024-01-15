@@ -33,7 +33,12 @@ function IconButton({ icon, href, onClick, ariaLabel }) {
     }
 
     return (
-        <button type="button" aria-label={ariaLabel} className={className}>
+        <button
+            type="button"
+            aria-label={ariaLabel}
+            className={className}
+            onClick={onClick}
+        >
             <FontAwesomeIcon icon={icon} />
         </button>
     );
