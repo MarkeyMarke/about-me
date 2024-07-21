@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e48f3fd7.css",
-    "main.js": "/static/js/main.9f74c0fa.js",
+    "main.js": "/static/js/main.12dd8343.js",
     "static/media/foundryLogo.png": "/static/media/foundryLogo.31b3e1426ade19e03e75.png",
     "static/media/forgeLogo.png": "/static/media/forgeLogo.ca6c44961bf1c16769c7.png",
     "static/media/sjsuLogo.png": "/static/media/sjsuLogo.832204bcd80d3cd97ceb.png",
@@ -11,10 +11,10 @@
     "static/media/peerConnectionsLogo.png": "/static/media/peerConnectionsLogo.65e370a4de977f9af777.png",
     "index.html": "/index.html",
     "main.e48f3fd7.css.map": "/static/css/main.e48f3fd7.css.map",
-    "main.9f74c0fa.js.map": "/static/js/main.9f74c0fa.js.map"
+    "main.12dd8343.js.map": "/static/js/main.12dd8343.js.map"
   },
   "entrypoints": [
     "static/css/main.e48f3fd7.css",
-    "static/js/main.9f74c0fa.js"
+    "static/js/main.12dd8343.js"
   ]
 }
